@@ -19,7 +19,7 @@ areas = %w(
   atlantische alaska argentijnse groenlandse indische pacifische
 ).sort_by(&:length).reverse
 attrs = %w(
-  witte wit rood rode roze blauwe blauw groene groen zwarte zwart
+  witte wit witpoot rood rode roze blauwe blauw groene groen zwarte zwart
   coho doorn chum
 ).sort_by(&:length).reverse
 suffixes = %w(
