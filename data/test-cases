@@ -1,7 +1,13 @@
+# fishes
+zalm
+zalm (salmo salar)
+salmo salar
+
 # fishing areas
 gevangen in Atlantic Ocean
 gevangen in the atlantic, pacific or another ocean, or another sea
 gevangen op Faroër islands
+gevangen in: oceaan
 visgebied atlantic ocean
 vangstgebied noordzee
 vangstgebied FAO 21
@@ -31,9 +37,19 @@ gevangen in de Atlantische Ocean met ringzegen
 gevangen op de eilanden met de hand
 gevangen met lijnen in de zee
 
-# fishes
-zalm
-zalm (salmo salar)
-salmo salar
+# aquaculture areas
+gekweekt in Ecuador
+aquacultuurproduct uit: Norway
+
+# aquaculture methods
+kweekmethode open kooien
+kweekmethode: kooien
+
+# aquaculture area and method
+gekweekt in Denmark kweekmethode kooien
+gekweekt in Denmark, kweekmethode open kooien
+
+# fish with other attributes
 zalm (salmo salar) gevangen in oceaan
 salmo salar gevangen in atlantic ocean met lijnen
+zalm (salmo salar), aquacultuurproduct uit Ecuador, kweekmethode: bassins

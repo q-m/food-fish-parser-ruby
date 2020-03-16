@@ -14,7 +14,7 @@ module FoodFishParser::Grammar
     end
 
     rule catch_method_content
-      method:( words_no_in_on )
+      words_no_in_on
       <CatchMethodNode>
     end
 

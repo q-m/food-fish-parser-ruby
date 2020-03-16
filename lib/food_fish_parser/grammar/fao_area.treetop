@@ -1,0 +1,40 @@
+module FoodFishParser::Grammar
+  grammar FaoArea
+    include Common
+
+    rule fao_area_list_enclosures
+      ( '(' ws* fao_area_list ws* ')' ) /
+      ( '|' ws* fao_area_list ) /
+      fao_area_list
+    end
+
+    rule fao_area_list
+      fao_area_indicator ws*
+      fao_area_code
+      (
+        ( '/' fao_area_code )+ /
+        ( ( ',' ws* fao_area_code )+ ws* comma? ws* and ws+ fao_area_code ) /
+        ( ',' ws* fao_area_code )+
+      )?
+    end
+
+    rule fao_area_indicator
+      'FAO'i / 'FA0'i
+    end
+
+    rule fao_area_code
+      # major area code
+      (
+        ( '0' [0-9] [0-9] ) / ( [0-9] [0-9] )
+        # subarea code, can be in different formats
+        (
+          ( ( dash / '/' / ws* )? [ivIV]+ ) /
+          ( dash [0-9] [0-9] )
+        )?
+        # a or b can be added
+        [abAB]?
+      )
+      <FaoAreaCodeNode>
+    end
+  end
+end

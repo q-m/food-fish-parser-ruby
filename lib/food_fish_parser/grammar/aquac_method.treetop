@@ -1,0 +1,17 @@
+module FoodFishParser::Grammar
+  grammar AquacMethod
+    include Common
+
+    rule aquac_method_indicator
+      ( 'wijze van vangst en kweekmethode: aquacultuur:'i / 'kweekmethoden'i / 'kweekmethode'i )
+      !char
+      ( ws* ':' )?
+    end
+
+    rule aquac_method_content
+      words
+      <AquacMethodNode>
+    end
+
+  end
+end

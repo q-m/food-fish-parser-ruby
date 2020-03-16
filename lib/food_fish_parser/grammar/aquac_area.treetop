@@ -1,0 +1,25 @@
+
+module FoodFishParser::Grammar
+  grammar AquacArea
+    include Common
+    include FaoArea
+
+    rule aquac_area_indicator
+      (
+        'uit'i / 'gekweekt in'i / 'gekweekt op'i /
+        'aquacultuurproduct uit'i / 'aquacultuur product uit'i
+      )
+      !char
+      ( ws* ':' )?
+    end
+
+    rule aquac_area_content
+      (
+        ( area:( words ) ( ws* fao_area_list_enclosures )? ) /
+        ( fao_area_list_enclosures ws* area:( words )? )
+      )
+      <AquacAreaNode>
+    end
+
+  end
+end

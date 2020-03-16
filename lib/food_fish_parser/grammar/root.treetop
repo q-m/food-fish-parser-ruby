@@ -4,6 +4,8 @@ module FoodFishParser::Grammar
     include FishName
     include CatchArea
     include CatchMethod
+    include AquacArea
+    include AquacMethod
 
     rule root
       fishes:( fish ( ws* and_or ws* fish )* )
@@ -12,10 +14,13 @@ module FoodFishParser::Grammar
 
     rule fish
       (
-        ( fish_name_list ( ws* comma )? ws+ fish_catch_info? ) /
+        ( fish_name_list ( ws* comma )? ws+ fish_catch_info ) /
+        ( fish_name_list ( ws* comma )? ws+ fish_aquac_info ) /
         fish_name_list /
-        fish_catch_info
+        fish_catch_info /
+        fish_aquac_info
       )
+      ( ws* '.' )?
       <FishNode>
     end
 
@@ -26,6 +31,19 @@ module FoodFishParser::Grammar
       ) / (
         catch_area_indicator ws* catch_area_content
         ( ( ws* comma )? ws+ catch_method_indicator_short ws* catch_method_content )?
+      )
+    end
+
+    rule fish_aquac_info
+      (
+        aquac_area_indicator ws* aquac_area_content
+          ws* '.' ws* aquac_method_indicator ws* aquac_method_content
+      ) / (
+        aquac_area_indicator ws* aquac_area_content
+          ( ( ws* comma )? ws+ aquac_method_indicator ws* aquac_method_content )?
+      ) / (
+        aquac_method_indicator ws* aquac_method_content
+          ( ( ws* comma )? ws+ aquac_area_indicator ws* aquac_area_content )?
       )
     end
 
