@@ -1,0 +1,58 @@
+module FoodFishParser::Grammar
+  grammar Common
+
+    # whitespace
+    rule ws
+      [ \t]
+    end
+
+    rule char
+      [[:alnum:]] / [-]
+    end
+
+    rule comma
+      ','
+    end
+
+    rule dash
+      [-֊ ‐ ‑ ‒ – — ― ﹘﹣－]
+    end
+
+    rule words
+      !indicator_words char+ ( ( ws* comma )? ws+ !indicator_words char+ )*
+    end
+
+    rule words_no_in_on
+      !( indicator_words / 'in'i / 'op'i ) char+ ( ( ws* comma )? ws+ !( indicator_words / 'in'i / 'op'i ) char+ )*
+    end
+
+    rule words_no_with
+      !( indicator_words / 'met'i ) char+ ( ( ws* comma )? ws+ !( indicator_words / 'met'i ) char+ )*
+    end
+
+    rule and
+      ( 'and'i / 'en'i / 'und'i ) !char / '&'
+    end
+
+    rule or
+      ( 'or'i / 'of'i / 'oder'i ) !char / '/'
+    end
+
+    rule and_or
+      ( ( 'and/or'i / 'en/of'i ) !char ) / and / or
+    end
+
+    rule indicator_words
+      (
+        'gevangen'i /
+        'visgebied'i /
+        'vangstgebied'i /
+        'vangstmethode'i /
+        'vangsmethode'i /
+        'FAO'i /
+        'FA0'i
+      )
+      ![[:alpha:]]
+    end
+  end
+end

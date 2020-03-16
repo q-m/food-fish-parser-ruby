@@ -1,0 +1,21 @@
+module FoodFishParser::Grammar
+  grammar FishName
+    include Common
+    include FishNameLatin
+    include FishNameNL
+
+    rule fish_name
+      (
+        fish_name_nl ws* '(' ws* fish_name_latin ws* ')' /
+        fish_name_nl /
+        fish_name_latin
+      )
+      <FishNameNode>
+    end
+
+    rule fish_name_list
+      fish_name ( ws+ and_or ws+ fish_name )*
+    end
+
+  end
+end

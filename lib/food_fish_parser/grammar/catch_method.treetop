@@ -1,0 +1,22 @@
+module FoodFishParser::Grammar
+  grammar CatchMethod
+    include Common
+
+    rule catch_method_indicator
+      ( 'gevangen met'i / 'vangstmethode'i / 'vangsmethode'i )
+      !char
+      ( ws* ':' )?
+    end
+
+    rule catch_method_indicator_short
+      catch_method_indicator /
+      ( 'met'i ) !char ( ws* ':' )?
+    end
+
+    rule catch_method_content
+      method:( words_no_in_on )
+      <CatchMethodNode>
+    end
+
+  end
+end

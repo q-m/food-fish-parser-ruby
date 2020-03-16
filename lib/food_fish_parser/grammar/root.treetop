@@ -1,0 +1,33 @@
+module FoodFishParser::Grammar
+  grammar Root
+    include Common
+    include FishName
+    include CatchArea
+    include CatchMethod
+
+    rule root
+      fishes:( fish ( ws* and_or ws* fish )* )
+      <RootNode>
+    end
+
+    rule fish
+      (
+        ( fish_name_list ( ws* comma )? ws+ fish_catch_info? ) /
+        fish_name_list /
+        fish_catch_info
+      )
+      <FishNode>
+    end
+
+    rule fish_catch_info
+      (
+        catch_method_indicator ws* catch_method_content
+        ( ( ws* comma )? ws+ catch_area_indicator_short ws* catch_area_content )?
+      ) / (
+        catch_area_indicator ws* catch_area_content
+        ( ( ws* comma )? ws+ catch_method_indicator_short ws* catch_method_content )?
+      )
+    end
+
+  end
+end

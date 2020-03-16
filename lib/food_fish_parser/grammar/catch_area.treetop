@@ -1,0 +1,58 @@
+module FoodFishParser::Grammar
+  grammar CatchArea
+
+    rule catch_area_indicator
+      ( 'gevangen in'i / 'gevangen op'i / 'visgebied'i / 'vangstgebied'i / 'vangsgebied'i )
+      !char
+      ( ws* ':' )?
+    end
+
+    rule catch_area_indicator_short
+      catch_area_indicator /
+      ( 'in'i / 'op'i ) !char ( ws* ':' )?
+    end
+
+    rule catch_area_content
+      (
+        ( area:( words_no_with ) ( ws* catch_area_fao_list_enclosures )? ) /
+        ( catch_area_fao_list_enclosures ws* area:( words_no_with )? )
+      )
+      <CatchAreaNode>
+    end
+
+    rule catch_area_fao_list_enclosures
+      ( '(' ws* catch_area_fao_list ws* ')' ) /
+      ( '|' ws* catch_area_fao_list ) /
+      catch_area_fao_list
+    end
+
+    rule catch_area_fao_list
+      catch_area_fao_indicator ws*
+      catch_area_fao_code
+      (
+        ( '/' catch_area_fao_code )+ /
+        ( ( ',' ws* catch_area_fao_code )+ ws* comma? ws* and ws+ catch_area_fao_code ) /
+        ( ',' ws* catch_area_fao_code )+
+      )?
+    end
+
+    rule catch_area_fao_indicator
+      'FAO'i / 'FA0'i
+    end
+
+    rule catch_area_fao_code
+      # major area code
+      (
+        ( '0' [0-9] [0-9] ) / ( [0-9] [0-9] )
+        # subarea code, can be in different formats
+        (
+          ( ( dash / '/' / ws* )? [ivIV]+ ) /
+          ( dash [0-9] [0-9] )
+        )?
+        # a or b can be added
+        [abAB]?
+      )
+      <CatchAreaFAOCodeNode>
+    end
+  end
+end
