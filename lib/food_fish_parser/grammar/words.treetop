@@ -5,7 +5,7 @@ module FoodFishParser::Grammar
     include FishNameNL
 
     rule word
-      !words_to_avoid char+
+      '(sub)'i? !words_to_avoid char+
     end
 
     rule words
