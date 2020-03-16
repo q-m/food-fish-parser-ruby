@@ -1,0 +1,42 @@
+module FoodFishParser::Grammar
+  grammar Words
+    include Common
+    include FishNameLatin
+    include FishNameNL
+
+    rule word
+      !words_to_avoid char+
+    end
+
+    rule words
+      word ( ( ws* comma )? ws+ word )*
+    end
+
+    rule words_no_in_on
+      !( 'in'i / 'op'i !char ) word ( ( ws* comma )? ws+ !( 'in'i / 'op'i !char ) word )*
+    end
+
+    rule words_no_with
+      !( 'met'i !char ) word ( ( ws* comma )? ws+ !( 'met'i !char ) word )*
+    end
+
+    # these words should not be considered, because they indicate a new section
+    rule words_to_avoid
+      (
+        fish_name_latin /
+        fish_name_nl /
+        'gevangen'i /
+        'visgebied'i /
+        'vangstgebied'i /
+        'vangstmethode'i /
+        'vangsmethode'i /
+        'gekweekt'i /
+        'kweekmethode'i /
+        'kweekmethoden'i /
+        'FAO'i /
+        'FA0'i
+      )
+      ![[:alpha:]]
+    end
+  end
+end

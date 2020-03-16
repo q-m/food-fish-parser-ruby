@@ -8,7 +8,12 @@ module FoodFishParser::Grammar
     include AquacMethod
 
     rule root
-      fishes:( fish ( ws* and_or ws* fish )* )
+      fishes:(
+        ( fish ( ws* and_or ws* fish )+ ) /
+        ( fish ( ws* ( '.' / comma ) ws* fish )+ ) /
+        fish
+      )
+      ( ws* '.' )?
       <RootNode>
     end
 
@@ -20,7 +25,6 @@ module FoodFishParser::Grammar
         fish_catch_info /
         fish_aquac_info
       )
-      ( ws* '.' )?
       <FishNode>
     end
 

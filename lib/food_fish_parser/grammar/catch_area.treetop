@@ -1,6 +1,7 @@
 module FoodFishParser::Grammar
   grammar CatchArea
     include Common
+    include Words
     include FaoArea
 
     rule catch_area_indicator

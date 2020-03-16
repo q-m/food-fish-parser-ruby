@@ -2,6 +2,7 @@
 module FoodFishParser::Grammar
   grammar AquacArea
     include Common
+    include Words
     include FaoArea
 
     rule aquac_area_indicator

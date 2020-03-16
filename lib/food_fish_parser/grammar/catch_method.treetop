@@ -1,6 +1,7 @@
 module FoodFishParser::Grammar
   grammar CatchMethod
     include Common
+    include Words
 
     rule catch_method_indicator
       ( 'gevangen met'i / 'vangstmethode'i / 'vangsmethode'i )

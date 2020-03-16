@@ -18,21 +18,6 @@ module FoodFishParser::Grammar
       [-֊ ‐ ‑ ‒ – — ― ﹘﹣－]
     end
 
-    rule word
-      !indicator_words char+
-    end
-
-    rule words
-      word ( ( ws* comma )? ws+ word )*
-    end
-
-    rule words_no_in_on
-      !( 'in'i / 'op'i !char ) word ( ( ws* comma )? ws+ !( 'in'i / 'op'i !char ) word )*
-    end
-
-    rule words_no_with
-      !( 'met'i !char ) word ( ( ws* comma )? ws+ !( 'met'i !char ) word )*
-    end
 
     rule and
       ( 'and'i / 'en'i / 'und'i ) !char / '&'
@@ -44,22 +29,6 @@ module FoodFishParser::Grammar
 
     rule and_or
       ( ( 'and/or'i / 'en/of'i ) !char ) / and / or
-    end
-
-    rule indicator_words
-      (
-        'gevangen'i /
-        'visgebied'i /
-        'vangstgebied'i /
-        'vangstmethode'i /
-        'vangsmethode'i /
-        'gekweekt'i /
-        'kweekmethode'i /
-        'kweekmethoden'i /
-        'FAO'i /
-        'FA0'i
-      )
-      ![[:alpha:]]
     end
   end
 end

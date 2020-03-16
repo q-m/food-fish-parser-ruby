@@ -2,6 +2,8 @@ Alaskakoolvis
 Ansjovis
 Atlantische zalm
 Barracuda
+Cocquilles
+Coquilles
 Zeesnoek
 Beekridder
 Blauwe wijting
@@ -34,6 +36,7 @@ Leng
 Lom
 Meerval
 Mul
+Pangasius
 Pollak
 Regenboogforel
 Rode poon

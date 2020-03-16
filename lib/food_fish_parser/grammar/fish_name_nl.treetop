@@ -17,7 +17,7 @@ module FoodFishParser::Grammar
     end
 
     rule fish_name_nl_name
-      'zonnevis'i / 'zeewolf'i / 'zeesnoek'i / 'zeekreeft'i / 'zeeforel'i / 'zeebaars'i / 'zalm'i / 'wijting'i / 'vintonijn'i / 'tonijn'i / 'tong'i / 'tarbot'i / 'tapijtschelp'i / 'sprot'i / 'spiering'i / 'snotolf'i / 'snoekbaars'i / 'snoek'i / 'schol'i / 'schelvis'i / 'schar'i / 'regenboogforel'i / 'raat'i / 'poon'i / 'pollak'i / 'mul'i / 'meerval'i / 'lom'i / 'leng'i / 'koolvis'i / 'karper'i / 'kabeljauw'i / 'hondstong'i / 'hoki'i / 'heilbot'i / 'heek'i / 'haring'i / 'haai'i / 'gruis'i / 'grootoogtonijn'i / 'griet'i / 'geep'i / 'geelvintonijn'i / 'garnalen'i / 'garnaal'i / 'fint'i / 'botervis'i / 'bot'i / 'beekridder'i / 'barracuda'i / 'ansjovis'i
+      'zonnevis'i / 'zeewolf'i / 'zeesnoek'i / 'zeekreeft'i / 'zeeforel'i / 'zeebaars'i / 'zalm'i / 'wijting'i / 'vintonijn'i / 'tonijn'i / 'tong'i / 'tarbot'i / 'tapijtschelp'i / 'sprot'i / 'spiering'i / 'snotolf'i / 'snoekbaars'i / 'snoek'i / 'schol'i / 'schelvis'i / 'schar'i / 'regenboogforel'i / 'raat'i / 'poon'i / 'pollak'i / 'pangasius'i / 'mul'i / 'meerval'i / 'lom'i / 'leng'i / 'koolvis'i / 'karper'i / 'kabeljauw'i / 'hondstong'i / 'hoki'i / 'heilbot'i / 'heek'i / 'haring'i / 'haai'i / 'gruis'i / 'grootoogtonijn'i / 'griet'i / 'geep'i / 'geelvintonijn'i / 'garnalen'i / 'garnaal'i / 'fint'i / 'coquilles'i / 'cocquilles'i / 'botervis'i / 'bot'i / 'beekridder'i / 'barracuda'i / 'ansjovis'i
     end
 
     rule fish_name_nl_suffix
