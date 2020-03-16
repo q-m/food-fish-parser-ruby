@@ -7,7 +7,7 @@ module FoodFishParser::Grammar
     end
 
     rule char
-      [[:alnum:]] / [-]
+      [[:alnum:]] / [-/]
     end
 
     rule comma
