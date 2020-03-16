@@ -21,8 +21,13 @@ gem install food_fish_parser
 ```ruby
 require 'food_fish_parser'
 
-s = "Pacifische kabeljauw (Gadus macrocephalus), gevangen in het " +
-    "Noordoostelijke deel Stille oceaan (FAO 67) met trawlnetten, haken en lijnen"
+s = <<EOT.gsub(/\n/, '').strip
+  zalm (salmo salar), gekweekt in noorwegen, kweekmethode: kooien.pangasius
+  (pangasius spp), gekweekt in vietnam,  kweekmethode: vijver. coquilles
+  (placopecten magellanicus), vangstgebied noordwest atlantische oceaan fao 21,
+  kabeljauw (gadus macrocephalus), vangstgebied stille oceaan fao 67, garnaal
+  (litopenaeus vannamei), gekweekt in ecuador, kweekmethode: vijver.
+EOT
 parser = FoodFishParser::Parser.new
 puts parser.parse(s).to_a.inspect
 ```
@@ -30,15 +35,39 @@ Results in a list of detected fishes
 ```ruby
 [
   {
-    :names => [
-      { :common => "Pacifische kabeljauw", :latin => "Gadus macrocephalus" }
-    ],
-    :catch_areas => [
-      { :text => "het Noordoostelijke deel Stille oceaan", :fao_codes=>["67"] }
-     ],
-    :catch_methods => [
-      { :text => "trawlnetten, haken en lijnen" }
-    ]
+    :names =>               [{ :common=>"zalm", :latin=>"salmo salar" }],
+    :catch_areas =>         [],
+    :catch_methods =>       [],
+    :aquaculture_areas =>   [{ :text=>"noorwegen", :fao_codes=>[] }],
+    :aquaculture_methods => [{ :text=>"kooien" }]
+  },
+  {
+    :names =>               [{ :common=>"pangasius", :latin=>"pangasius spp" }],
+    :catch_areas =>         [],
+    :catch_methods =>       [],
+    :aquaculture_areas =>   [{ :text=>"vietnam", :fao_codes=>[] }],
+    :aquaculture_methods => [{ :text=>"vijver" }]
+  },
+  {
+    :names =>               [{ :common=>"coquilles", :latin=>"placopecten magellanicus" }],
+    :catch_areas =>         [{ :text=>"noordwest atlantische oceaan", :fao_codes=>["21"] }],
+    :catch_methods =>       [],
+    :aquaculture_areas =>   [],
+    :aquaculture_methods => []
+  },
+  {
+    :names =>               [{ :common=>"kabeljauw", :latin=>"gadus macrocephalus" }],
+    :catch_areas =>         [{ :text=>"stille oceaan", :fao_codes=>["67"] }],
+    :catch_methods =>       [],
+    :aquaculture_areas =>   [],
+    :aquaculture_methods => []
+  },
+  {
+    :names =>               [{ :common=>"garnaal", :latin=>"litopenaeus vannamei" }],
+    :catch_areas =>         [],
+    :catch_methods =>       [],
+    :aquaculture_areas =>   [{ :text=>"ecuador", :fao_codes=>[] }],
+    :aquaculture_methods => [{ :text=>"vijver" }]
   }
 ]
 ```
