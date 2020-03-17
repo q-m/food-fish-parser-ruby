@@ -13,15 +13,15 @@ module FoodFishParser::Grammar
     end
 
     rule fish_name_nl_attr
-      'zwarte'i / 'zwart'i / 'witte'i / 'witpoot'i / 'wit'i / 'roze'i / 'rood'i / 'rode'i / 'groene'i / 'groen'i / 'doorn'i / 'coho'i / 'chum'i / 'blauwe'i / 'blauw'i
+      'zwarte'i / 'zwart'i / 'witte'i / 'witpoot'i / 'wit'i / 'roze'i / 'rood'i / 'rode'i / 'rivier'i / 'pijl'i / 'kleine'i / 'klein'i / 'grote'i / 'groot'i / 'groene'i / 'groen'i / 'doorn'i / 'coho'i / 'chum'i / 'blauwe'i / 'blauw'i
     end
 
     rule fish_name_nl_name
-      'zonnevis'i / 'zeewolf'i / 'zeesnoek'i / 'zeekreeft'i / 'zeeforel'i / 'zeebaars'i / 'zalm'i / 'wijting'i / 'vintonijn'i / 'tonijn'i / 'tong'i / 'tarbot'i / 'tapijtschelp'i / 'sprot'i / 'spiering'i / 'snotolf'i / 'snoekbaars'i / 'snoek'i / 'schol'i / 'schelvis'i / 'schar'i / 'regenboogforel'i / 'raat'i / 'poon'i / 'pollak'i / 'pangasius'i / 'mul'i / 'meerval'i / 'lom'i / 'leng'i / 'koolvis'i / 'karper'i / 'kabeljauw'i / 'hondstong'i / 'hoki'i / 'heilbot'i / 'heek'i / 'haring'i / 'haai'i / 'gruis'i / 'grootoogtonijn'i / 'griet'i / 'geep'i / 'geelvintonijn'i / 'garnalen'i / 'garnaal'i / 'fint'i / 'coquilles'i / 'cocquilles'i / 'botervis'i / 'bot'i / 'beekridder'i / 'barracuda'i / 'ansjovis'i
+      'zonnevis'i / 'zeewolf'i / 'zeesnoek'i / 'zeekreeft'i / 'zeeforel'i / 'zeebaars'i / 'zalm'i / 'wijting'i / 'weekdieren'i / 'weekdier'i / 'vintonijn'i / 'tonijn'i / 'tong'i / 'tilapia'i / 'tarbot'i / 'tapijtschelp'i / 'sprot'i / 'spie'i / 'snotolf'i / 'snoekbaars'i / 'snoek'i / 'skipjack tonijn'i / 'schol'i / 'schelvis'i / 'schelpen'i / 'schelp'i / 'schar'i / 'sardines'i / 'regenboogforel'i / 'raat'i / 'poon'i / 'pollak'i / 'pangasius'i / 'paling'i / 'oogtonijn'i / 'mul'i / 'mosselen'i / 'mossel'i / 'meerval'i / 'mantelschelp'i / 'makreel'i / 'lom'i / 'leng'i / 'kreeft'i / 'koolvis'i / 'kokkel'i / 'karper'i / 'kabeljauw'i / 'hondstong'i / 'hoki'i / 'heilbot'i / 'heek'i / 'hake'i / 'haai'i / 'ha'i / 'gruis'i / 'griet'i / 'geep'i / 'geelvintonijn'i / 'garnalen'i / 'garnaal'i / 'fint'i / 'coquilles'i / 'cocquilles'i / 'botervis'i / 'bot'i / 'beekridder'i / 'barracuda'i / 'baars'i / 'arkschelp'i / 'ansjovis'i / 'albacore tonijn'i
     end
 
     rule fish_name_nl_suffix
-      'filets'i / 'filet'i
+      'vlees'i / 'ringen'i / 'ring'i / 'filets'i / 'filet'i
     end
   end
 end

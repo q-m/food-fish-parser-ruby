@@ -1,3 +1,5 @@
+Arkschelp
+Albacore tonijn
 Alaskakoolvis
 Ansjovis
 Atlantische zalm
@@ -5,6 +7,7 @@ Barracuda
 Cocquilles
 Coquilles
 Zeesnoek
+Baars
 Beekridder
 Blauwe wijting
 Blauwvintonijn
@@ -24,6 +27,7 @@ Groenlandse heilbot
 Grootoogtonijn
 Gruis
 Haai
+Hake
 Haring
 Heek
 Heilbot
@@ -31,20 +35,31 @@ Hoki
 Hondstong
 Kabeljauw
 Karper
+Kokkel
 Koolvis
+Kreeft
 Leng
 Lom
+Mantelschelp
+Makreel
 Meerval
+Mossel
+Mosselen
 Mul
+Paling
 Pangasius
 Pollak
 Regenboogforel
 Rode poon
 Rode zalm
 Roze zalm
+Sardines
 Schar
+Schelp
+Schelpen
 Schelvis
 Schol
+Skipjack tonijn
 Snoek
 Snoekbaars
 Snotolf
@@ -52,7 +67,10 @@ Spiering
 Sprot
 Tapijtschelp
 Tarbot
+Tilapia
 Tong
+Weekdier
+Weekdieren
 Wijting
 Witte tonijn
 Zeebaars

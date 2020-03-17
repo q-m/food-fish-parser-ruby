@@ -20,10 +20,10 @@ areas = %w(
 ).sort_by(&:length).reverse
 attrs = %w(
   witte wit witpoot rood rode roze blauwe blauw groene groen zwarte zwart
-  coho doorn chum
+  coho doorn chum pijl groot grote klein kleine rivier
 ).sort_by(&:length).reverse
 suffixes = %w(
-  filets filet
+  filets filet vlees ring ringen
 )
 
 names = Set.new
