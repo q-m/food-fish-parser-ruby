@@ -19,7 +19,7 @@ module FoodFishParser
     module RootNode
       include SyntaxNodeAdditions
       def to_a
-        to_a_deep(fishes, FishNode).map(&:to_h)
+        to_a_deep(self, FishNode).map(&:to_h)
       end
     end
 

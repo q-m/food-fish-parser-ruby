@@ -16,9 +16,15 @@ module FoodFishParser
 
     # Parse food fish text into a structured representation.
     #
+    # @param s [String] text to parse
+    # @param anywhere [Bool] +false+ assume the text is only fish details, +true+ to search for fish details in the text
     # @return [FoodFishParser::Grammar::RootNode] structured representation of fish details
     # @note Unrecognized options are passed to Treetop, but this is not guarenteed to remain so forever.
-    def parse(s, **options)
+    def parse(s, anywhere: false, **options)
+      if anywhere
+        options = options.merge(root: :root_anywhere, consume_all_input: false)
+      end
+
       @parser.parse(s, **options)
     end
 

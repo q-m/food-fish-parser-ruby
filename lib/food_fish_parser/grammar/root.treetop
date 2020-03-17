@@ -1,16 +1,88 @@
 module FoodFishParser::Grammar
   grammar Root
     include Common
-    include Fish
+    include FishName
+    include CatchArea
+    include CatchMethod
+    include AquacArea
+    include AquacMethod
 
+    # Regular root node that requires all text to match fish details.
+    #
+    # Note that here we prefer fish with catch or aquaculture info,
+    # then try fish names, and finally only catch or aquaculture info.
+    #
+    # The assumption is that all declared fish would have the same amount
+    # of information. Hence we first try for all info, then resort to partial
+    # info.
     rule root
-      fishes:(
-        ( fish ( ws* and_or ws* fish )+ ) /
-        ( fish ( ws* ( '.' / comma ) ws* fish )+ ) /
-        fish
+      (
+        ( fish_with_info ( ws* fish_sep ws* fish_with_info )* ) /
+        ( fish_only_names ( ws* fish_sep ws* fish_only_names )* ) /
+        ( fish_only_info ( ws* fish_sep ws* fish_only_info )* )
       )
-      ( ws* '.' )?
+      ws* '.'? ws*
       <RootNode>
+    end
+
+    # Alternate root node that allows fish details to be interspaced with other text.
+    #
+    # Note that this can be a much more expensive operation.
+    rule root_anywhere
+      (
+        ( !fish_with_info . )* ( fish_with_info ( ( !fish_with_info . )* fish_with_info )* ) ( !fish_with_info . )* /
+        ( !fish_only_names . )* ( fish_only_names ( ( !fish_only_names . )+ fish_only_names )* ) ( !fish_only_names . )* /
+        ( !fish_only_info . )* ( fish_only_info ( ( !fish_only_info . )+ fish_only_info )* ) ( !fish_only_info . )*
+      )
+      <RootNode>
+    end
+
+    # separator between fish declarations
+    rule fish_sep
+      and_or / '.' / comma
+    end
+
+    # fish with catch or aquaculture info
+    rule fish_with_info
+      (
+        ( fish_name_list ( ws* ( comma / ':' ) )? ws+ fish_catch_info ) /
+        ( fish_name_list ( ws* ( comma / ':' ) )? ws+ fish_aquac_info )
+      )
+      <FishNode>
+    end
+
+    # fish names only
+    rule fish_only_names
+      fish_name_list <FishNode>
+    end
+
+    # catch or aquaculture info only (no names)
+    rule fish_only_info
+      ( fish_catch_info / fish_aquac_info ) <FishNode>
+    end
+
+
+    rule fish_catch_info
+      (
+        catch_method_indicator ws* catch_method_content
+        ( ( ws* comma )? ws+ catch_area_indicator_short ws* catch_area_content )?
+      ) / (
+        catch_area_indicator ws* catch_area_content
+        ( ( ws* comma )? ws+ catch_method_indicator_short ws* catch_method_content )?
+      )
+    end
+
+    rule fish_aquac_info
+      (
+        aquac_area_indicator ws* aquac_area_content
+          ws* '.' ws* aquac_method_indicator ws* aquac_method_content
+      ) / (
+        aquac_area_indicator ws* aquac_area_content
+          ( ( ws* comma )? ws+ aquac_method_indicator ws* aquac_method_content )?
+      ) / (
+        aquac_method_indicator ws* aquac_method_content
+          ( ( ws* comma )? ws+ aquac_area_indicator_short ws* aquac_area_content )?
+      )
     end
   end
 end
