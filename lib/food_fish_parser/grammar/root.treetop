@@ -19,8 +19,8 @@ module FoodFishParser::Grammar
 
     rule fish
       (
-        ( fish_name_list ( ws* comma )? ws+ fish_catch_info ) /
-        ( fish_name_list ( ws* comma )? ws+ fish_aquac_info ) /
+        ( fish_name_list ( ws* ( comma / ':' ) )? ws+ fish_catch_info ) /
+        ( fish_name_list ( ws* ( comma / ':' ) )? ws+ fish_aquac_info ) /
         fish_name_list /
         fish_catch_info /
         fish_aquac_info

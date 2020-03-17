@@ -16,8 +16,9 @@ module FoodFishParser::Grammar
 
     rule aquac_area_content
       (
-        ( area:( words ) ( ws* fao_area_list_enclosures )? ) /
-        ( fao_area_list_enclosures ws* area:( words )? )
+        ( area:( words ) ( ws* comma? ws* fao_area_list_enclosures )? ) /
+        ( fao_area_list_enclosures ws* comma? ws* area:( words ) ) /
+        fao_area_list_enclosures area:''
       )
       <AquacAreaNode>
     end

@@ -5,7 +5,11 @@ module FoodFishParser::Grammar
     include FaoArea
 
     rule catch_area_indicator
-      ( 'gevangen in'i / 'gevangen op'i / 'visgebied'i / 'vangstgebied'i / 'vangsgebied'i )
+      (
+        'gevangen in'i / 'gevangen op'i / 'visgebied'i /
+        'vangstgebied'i / 'vangsgebied'i /
+        'betrapt bij'i
+      )
       !char
       ( ws* ':' )?
     end
@@ -17,8 +21,9 @@ module FoodFishParser::Grammar
 
     rule catch_area_content
       (
-        ( area:( words_no_with ) ( ws* fao_area_list_enclosures )? ) /
-        ( fao_area_list_enclosures ws* area:( words_no_with )? )
+        ( area:( words_no_with ) ( ws* comma? ws* fao_area_list_enclosures )? ) /
+        ( fao_area_list_enclosures ws* comma? ws* area:( words_no_with ) ) /
+        fao_area_list_enclosures area:''
       )
       <CatchAreaNode>
     end

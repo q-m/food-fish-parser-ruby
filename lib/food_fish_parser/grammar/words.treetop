@@ -30,6 +30,7 @@ module FoodFishParser::Grammar
         'vangstgebied'i /
         'vangstmethode'i /
         'vangsmethode'i /
+        'betrapt'i /
         'gekweekt'i /
         'kweekmethode'i /
         'kweekmethoden'i /
