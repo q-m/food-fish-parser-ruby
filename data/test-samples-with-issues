@@ -1,7 +1,46 @@
 # multiple fishing areas with a/b/c
 Alaska KOOLVIS gevangen in: A = het Noordwestelijke deel Stille Oceaan (FAO 61) gevangen met trawlnetten of B = het Noordoostelijke deel Stille Oceaan (FAO 67) 
+Gevangen in A=Noordoostelijke deel Stille Oceaan (FAO 67) gevangen met trawlnetten of B=Noordwestelijke deel Stille Oceaan (FAO 61) gevangen met trawlnetten
 gevangen met trawlnetten in fao 27-i barentszzee (a), fao27-iia noorse zee (b), fao27-iib spitsbergen en bereneiland (c))
 Gevangen in de (A) Barentszzee, (B) Noorse Zee of (C) Spitsbergen en Bereneiland.
+Gevangen in het noordwestelijk deel van de Stille Oceaan (FAO 61), vangstmethode: vallen (A*) / Gevangen in het noordoostelijk deel van de Stille Oceaan (FAO 67), vangstmethode: ringzegen (B*)
+Alaska koolvis (Theragra chalcogramma), gevangen met trawlnetten in het noordwestelijke deel van de Stille Oceaan (FAO 61) (01: Beringzee, 02: zee van Ochotsk, 03: Beringzee Rusland, 04: China, 05: Koerilen) of noordoostelijke deel van de Stille Oceaan (FAO 67) (01: Beringzee/Golf van Alaska, 02: Canada, 03: Beringzee USA, 04: Golf van Alaska, 05: Alaska, 06: USA).
+Gevangen met trawlnetten in * FAO 67 (Noordoostelijk deel van de Stille Oceaan)  **FAO 41 (Zuidwestelijk deel van de Atlantische Oceaan)
+
+# subvangstgebied
+gadus morhua, vangstgebied noordoost atlantische oceaan fao 27 (subvangstgebied: noorse zee, noordzee, barentszzee, spitsbergen en bereneiland), vangstmethode haken en lijnen, trawler, zegens, ring- en kruisnetten
+Gadus morhua, vangstgebied Noordoost Atlantische Oceaan FAO 27 (subvangstgebied: Noorse zee, Barentszzee, Spitsbergen en Bereneiland), vangstmethode haken en lijnen, trawler, zegens, ring en kruisnetten
+Gadus morhua, vangstgebied Noordoost Atlantische Oceaan FAO 27 (subvangstgebied: Noorse zee, Noordzee, Barentszzee, Spitsbergen en Bereneiland), vangstmethode haken en lijnen, trawler, zegens, ring- en kruisnetten
+Vangstgebied: Noordoost Atlantische oceaan FAO 27 sub: VIa/IVa
+
+# multiple regions and FAO regions
+KABELJAUW (Gadus morhua). In de Barentsz Zee ((FAO 27 (I)), de Noorse Zee (FAO 27 (IIa)), Spitzbergen en Bereneiland (FAO 27 (IIb)), Noordzee (FAO 27 (IVa - IVc)), Skagerrak en Kattegat (FAO 27 (IIIa)), Ijsland (FAO 27 (Va)), Faerör (FAO 27 (Vb)), westelijke Oostzee (FAO 27 (IIIb (23) - IIId(24))), oostelijke Oostzee (FAO 27 (IIId(25-32))), Oost Groenland (FAO 27 (XIVa-b)).
+Alaska koolvis (Theragra chalcogramma), Vangstgebied > FAO 67 noord Oost pacific 67-01A & FAO 61 Noord West pacific 61-02A, Vangstmethode > Trawlnetten.
+
+# OCR errors / typo's
+Gevangen in Spitsbergen en Bereneiland (FAO 27/llb), Vangstmethode: trawlnetten.
 
 # others
-gadus morhua, vangstgebied noordoost atlantische oceaan fao 27 (subvangstgebied: noorse zee, noordzee, barentszzee, spitsbergen en bereneiland), vangstmethode haken en lijnen, trawler, zegens, ring- en kruisnetten
+Soort: Alaska Koolvis (Theragra chaclogramma); Vangstmethode: Trawlnetten; Vangstgebied: Stille Oceaan (FA061)/Stille Oceaan (FA067); Subvangstgebied: Okhotskzee/Beringzee
+
+Kabeljauw (Gadus morhua), > Noordoostelijke Atlantische Oceaan; Subvangstgebied > Noordoosten van de Noordelijke IJszee en de Noorse Zee Code > FA0 27-01E.
+
+Wildvang FAO Gebied NR 27.4/4A (Noordzee), Vangstmethode: Pelagische Visserij
+
+Vangstgebied haring (Clupea harengus): NO Atlantische Oceaan. (FA027), subvangstgebied: Noordzee. Vangstmethode: Pelagic trawl.
+
+Vangstmethode Makreel (trawler, pelagisch) wildvangst FAO gebied nr, 27 (IV.4) Schillerlocken (gillnet) wildvangst FAO gebied nr. 21.
+
+KOOLVIS ((Alaska Pollock) gevangen in de Stille Oceaan (FAO 61/71 of FAO 67/77) vangstmethode: trawlnetten)
+
+skipjack tonijn ((VIS) (Katsuwonus pelamis) gevangen met ringnetten in de Stille Oceaan (FAO 71/77/81/87)
+
+Gevangen in de centrale Noordzee (FAO 27/IVb,vangstmethode: dubbelebordentrawls
+
+Gevangen met korren. FAO27.
+
+# variants that we won't recognize, use (regexp) parser based on named entity recognition
+Stille Oceaan, Noordwest, FAO 61/ Stille Oceaan, Noordoost, FAO 67.
+Xiphopenaeus kroyeri. FAO 31
+Zalm (Oncorhynchus gorbuscha. FAO 67)
+Mosselen. FAO87, Pacific Ocean
