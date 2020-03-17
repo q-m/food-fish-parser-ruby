@@ -7,11 +7,16 @@ module FoodFishParser::Grammar
 
     rule aquac_area_indicator
       (
-        'uit'i / 'gekweekt in'i / 'gekweekt op'i /
+        'gekweekt in'i / 'gekweekt op'i /
         'aquacultuurproduct uit'i / 'aquacultuur product uit'i
       )
       !char
       ( ws* ( ':' / '>' ) )?
+    end
+
+    rule aquac_area_indicator_short
+      aquac_area_indicator /
+      ( 'uit'i ) !char ( ws* ( ':' / '>' ) )?
     end
 
     rule aquac_area_content

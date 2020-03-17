@@ -47,7 +47,7 @@ module FoodFishParser::Grammar
           ( ( ws* comma )? ws+ aquac_method_indicator ws* aquac_method_content )?
       ) / (
         aquac_method_indicator ws* aquac_method_content
-          ( ( ws* comma )? ws+ aquac_area_indicator ws* aquac_area_content )?
+          ( ( ws* comma )? ws+ aquac_area_indicator_short ws* aquac_area_content )?
       )
     end
 
