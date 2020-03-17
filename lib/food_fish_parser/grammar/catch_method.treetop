@@ -4,14 +4,15 @@ module FoodFishParser::Grammar
     include Words
 
     rule catch_method_indicator
-      ( 'gevangen met'i / 'vangstmethode'i / 'vangsmethode'i )
+      ( 'wild'i ws* )?
+      ( 'gevangen'i ws+ with / 'vangstmethode'i / 'vangsmethode'i )
       !char
       ( ws* ':' )?
     end
 
     rule catch_method_indicator_short
       catch_method_indicator /
-      ( 'met'i ) !char ( ws* ':' )?
+      with ( ws* ':' )?
     end
 
     rule catch_method_content

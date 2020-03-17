@@ -17,7 +17,7 @@ module FoodFishParser::Grammar
     end
 
     rule words_no_with
-      !( 'met'i !char ) word ( ( ws* comma )? ws+ !( 'met'i !char ) word )*
+      !with word ( ( ws* comma )? ws+ !with word )*
     end
 
     # these words should not be considered, because they indicate a new section

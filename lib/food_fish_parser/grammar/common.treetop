@@ -30,5 +30,9 @@ module FoodFishParser::Grammar
     rule and_or
       ( ( 'and/or'i / 'en/of'i ) !char ) / and / or
     end
+
+    rule with
+      ( 'met'i / 'd.m.v.'i / 'd.m.v'i / 'with'i ) !char
+    end
   end
 end

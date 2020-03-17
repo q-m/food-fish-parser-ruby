@@ -5,9 +5,10 @@ module FoodFishParser::Grammar
     include FaoArea
 
     rule catch_area_indicator
+      ( 'wild'i ws* )?
       (
-        'gevangen in'i / 'gevangen op'i / 'visgebied'i /
-        'vangstgebied'i / 'vangsgebied'i /
+        'gevangen'i ws+ ( 'in'i / 'op'i ) /
+        'visgebied'i / 'vangstgebied'i / 'vangsgebied'i /
         'betrapt bij'i
       )
       !char
