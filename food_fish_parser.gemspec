@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.license          = 'MIT'
   s.description      = <<-EOD
     Food products that contain fish sometimes indicate details like fishing
-    area, method or aquaculture country. This parser know about various ways
+    area, method or aquaculture country. This parser knows about various ways
     this is found on a product package, and returns a structured representation
     of the fish ingredient details.
   EOD
