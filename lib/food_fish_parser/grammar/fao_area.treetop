@@ -10,6 +10,7 @@ module FoodFishParser::Grammar
 
     rule fao_area_list
       fao_area_indicator ws*
+      ':'? ws*
       fao_area_code
       (
         ( '/' fao_area_code )+ /
@@ -19,22 +20,41 @@ module FoodFishParser::Grammar
     end
 
     rule fao_area_indicator
-      'FAO'i / 'FA0'i
+      ( 'FAO'i / 'FA0'i )
+      ( dash 'gebied'i )? ( ws* 'nr'i '.'? )?
     end
 
     rule fao_area_code
-      # major area code
+      fao_area_major_code
       (
-        ( '0' [0-9] [0-9] ) / ( [0-9] [0-9] )
-        # subarea code, can be in different formats
-        (
-          ( ( dash / '/' / ws* )? [ivIV]+ ) /
-          ( dash [0-9] [0-9] )
-        )?
-        # a or b can be added
-        [abAB]?
-      )
+        ( ws* '(' ws* fao_area_sub_range ws* ')' ) /
+        ( fao_area_sub_range )
+      )?
       <FaoAreaCodeNode>
+    end
+
+    rule fao_area_major_code
+      ( '0' [0-9] [0-9] ) / ( [0-9] [0-9] )
+    end
+
+    rule fao_area_sub_range
+      fao_area_sub_code
+      ( ws* dash ws* fao_area_sub_code )?
+    end
+
+    rule fao_area_sub_code
+      (
+        ( ( dash / '/' / ws* )? [ivxIVX]+ ) /
+        ( dash [0-9] [0-9] )
+      )
+      fao_area_suffix?
+      (
+        ws* '(' ws* [[:digit:]]+ ( ws* dash ws* [[:digit:]]+ )? ws* ')'
+      )?
+    end
+
+    rule fao_area_suffix
+      [abcdABCD]
     end
   end
 end
