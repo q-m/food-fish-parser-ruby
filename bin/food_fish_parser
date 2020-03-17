@@ -41,8 +41,10 @@ def parse_single(s, parsed=nil, parser:, verbosity: 1, print: nil, escape: false
   if parsed
     puts(parsed.inspect) if verbosity > 1
     pp(parsed.to_a, color: color) if verbosity > 0
+    return true
   else
     puts "(no result: #{parser.parser.failure_reason})" if verbosity > 0
+    return false
   end
 end
 
@@ -63,13 +65,13 @@ def parse_file(path, parser:, verbosity: 1, print: nil, escape: false, color: fa
   pct_parsed   = 100.0 * count_parsed / (count_parsed + count_noresult)
   pct_noresult = 100.0 * count_noresult / (count_parsed + count_noresult)
   puts "parsed #{colorize(color && "1;32", count_parsed)} (#{pct_parsed.round(1)}%), no result #{colorize(color && "1;31", count_noresult)} (#{pct_noresult.round(1)}%)"
+  return count_noresult
 end
 
 verbosity = 1
 files = []
 strings = []
 print = nil
-parser_name = :strict
 escape = false
 color = true
 OptionParser.new do |opts|
@@ -100,8 +102,10 @@ end.parse!
 
 if strings.any? || files.any?
   parser = FoodFishParser::Parser.new
-  strings.each {|s| parse_single(s, parser: parser, verbosity: verbosity, print: print, escape: escape, color: color) }
-  files.each   {|f| parse_file(f, parser: parser, verbosity: verbosity, print: print, escape: escape, color: color) }
+  success = true
+  strings.each {|s| success &= parse_single(s, parser: parser, verbosity: verbosity, print: print, escape: escape, color: color) }
+  files.each   {|f| success &= parse_file(f, parser: parser, verbosity: verbosity, print: print, escape: escape, color: color) }
+  success or exit(1)
 else
   STDERR.puts("Please specify one or more --file or --string arguments (see --help).")
 end
