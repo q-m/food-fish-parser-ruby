@@ -4,12 +4,13 @@ module FoodFishParser::Grammar
     include Common
 
     rule fish_name_nl
+      ( 'verse'i ws+ )?
       ( fish_name_nl_area ws+ )? ( fish_name_nl_attr ws* )? fish_name_nl_name fish_name_nl_suffix?
       <FishNameCommonNode>
     end
 
     rule fish_name_nl_area
-      'pacifische'i / 'indische'i / 'groenlandse'i / 'atlantische'i / 'argentijnse'i / 'alaska'i
+      'pacifische'i / 'noorse'i / 'indische'i / 'groenlandse'i / 'atlantische'i / 'argentijnse'i / 'alaska'i
     end
 
     rule fish_name_nl_attr
