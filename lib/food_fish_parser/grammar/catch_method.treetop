@@ -7,7 +7,7 @@ module FoodFishParser::Grammar
       ( 'wild'i ws* )?
       ( 'gevangen'i ws+ with / 'vangstmethode'i / 'vangsmethode'i )
       !char
-      ( ws* ':' )?
+      ( ws* ( ':' / '>' ) )?
     end
 
     rule catch_method_indicator_short

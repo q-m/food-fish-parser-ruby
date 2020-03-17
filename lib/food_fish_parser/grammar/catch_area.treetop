@@ -12,7 +12,7 @@ module FoodFishParser::Grammar
         'betrapt bij'i
       )
       !char
-      ( ws* ':' )?
+      ( ws* ( ':' / '>' ) )?
     end
 
     rule catch_area_indicator_short

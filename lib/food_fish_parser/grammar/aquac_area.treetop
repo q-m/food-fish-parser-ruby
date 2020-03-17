@@ -11,7 +11,7 @@ module FoodFishParser::Grammar
         'aquacultuurproduct uit'i / 'aquacultuur product uit'i
       )
       !char
-      ( ws* ':' )?
+      ( ws* ( ':' / '>' ) )?
     end
 
     rule aquac_area_content
