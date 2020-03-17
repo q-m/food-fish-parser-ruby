@@ -7,7 +7,7 @@ module FoodFishParser::Grammar
     end
 
     rule char
-      [[:alnum:]] / [-/]
+      [[:alnum:]] / [-]
     end
 
     rule comma
@@ -32,7 +32,7 @@ module FoodFishParser::Grammar
     end
 
     rule with
-      ( 'met'i / 'd.m.v.'i / 'd.m.v'i / 'with'i ) !char
+      ( 'met'i / 'd.m.v.'i '.'? / 'with'i ) !char
     end
   end
 end

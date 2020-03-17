@@ -5,19 +5,27 @@ module FoodFishParser::Grammar
     include FishNameNL
 
     rule word
-      '(sub)'i? !words_to_avoid char+
+      word_abbr / '(sub)'i? !words_to_avoid char+
     end
 
     rule words
-      word ( ( ws* comma )? ws+ word )*
+      word ( word_sep word )*
     end
 
     rule words_no_in_on
-      !( 'in'i / 'op'i !char ) word ( ( ws* comma )? ws+ !( 'in'i / 'op'i !char ) word )*
+      !( 'in'i / 'op'i !char ) word ( word_sep !( 'in'i / 'op'i !char ) word )*
     end
 
     rule words_no_with
-      !with word ( ( ws* comma )? ws+ !with word )*
+      !with word ( word_sep !with word )*
+    end
+
+    rule word_sep
+      ( ws* ( comma / '/' ) ws* ) / ws+
+    end
+
+    rule word_abbr
+      ( [a-zA-Z] '.' )+ [a-zA-Z] / [a-zA-Z] '.' ( [a-zA-Z] '.' )+ ![a-zA-Z]
     end
 
     # these words should not be considered, because they indicate a new section
@@ -34,6 +42,7 @@ module FoodFishParser::Grammar
         'gekweekt'i /
         'kweekmethode'i /
         'kweekmethoden'i /
+        'd.m.v'i '.'? /
         'FAO'i /
         'FA0'i
       )
