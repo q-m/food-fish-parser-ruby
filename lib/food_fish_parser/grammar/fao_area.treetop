@@ -20,6 +20,7 @@ module FoodFishParser::Grammar
     end
 
     rule fao_area_indicator
+      ( 'vangstgebied'i ws+ )?
       ( 'FAO'i / 'FA0'i )
       ( ( dash / ws+ ) 'gebied'i )? ( ws* 'nr'i '.'? )?
     end

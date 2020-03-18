@@ -16,11 +16,17 @@ Vangstgebied: Noordoost Atlantische oceaan FAO 27 sub: VIa/IVa
 # multiple regions and FAO regions
 KABELJAUW (Gadus morhua). In de Barentsz Zee ((FAO 27 (I)), de Noorse Zee (FAO 27 (IIa)), Spitzbergen en Bereneiland (FAO 27 (IIb)), Noordzee (FAO 27 (IVa - IVc)), Skagerrak en Kattegat (FAO 27 (IIIa)), Ijsland (FAO 27 (Va)), Faerör (FAO 27 (Vb)), westelijke Oostzee (FAO 27 (IIIb (23) - IIId(24))), oostelijke Oostzee (FAO 27 (IIId(25-32))), Oost Groenland (FAO 27 (XIVa-b)).
 Alaska koolvis (Theragra chalcogramma), Vangstgebied > FAO 67 noord Oost pacific 67-01A & FAO 61 Noord West pacific 61-02A, Vangstmethode > Trawlnetten.
+Alaska koolvis (Theragra chalcogramma), gevangen met trawlnetten in het Noordwestelijke deel (FAO 61)* of in het Noordoostelijke deel (FAO 67)* van de Stille Oceaan.
 
 # OCR errors / typo's
 Gevangen in Spitsbergen en Bereneiland (FAO 27/llb), Vangstmethode: trawlnetten.
 
+# fish name/species typo's
+macruronus novaezealandiae, gevangen in de stille oceaan (vangstgebied fao 81) met trawlnetten
+
 # others
+Schelvisfilet, lijngevangen, afkomstig van duurzame visserij in de wateren rond IJsland
+
 Soort: Alaska Koolvis (Theragra chaclogramma); Vangstmethode: Trawlnetten; Vangstgebied: Stille Oceaan (FA061)/Stille Oceaan (FA067); Subvangstgebied: Okhotskzee/Beringzee
 
 Kabeljauw (Gadus morhua), > Noordoostelijke Atlantische Oceaan; Subvangstgebied > Noordoosten van de Noordelijke IJszee en de Noorse Zee Code > FA0 27-01E.
@@ -40,6 +46,7 @@ Gevangen in de centrale Noordzee (FAO 27/IVb,vangstmethode: dubbelebordentrawls
 Gevangen met korren. FAO27.
 
 # variants that we won't recognize, use (regexp) parser based on named entity recognition
+Deze ansjovis in koudgeperste Siciliaanse olijfolie, wordt gevangen in de Middelandse Zee.
 Stille Oceaan, Noordwest, FAO 61/ Stille Oceaan, Noordoost, FAO 67.
 Xiphopenaeus kroyeri. FAO 31
 Zalm (Oncorhynchus gorbuscha. FAO 67)
