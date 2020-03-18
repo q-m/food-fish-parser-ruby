@@ -29,6 +29,8 @@ suffixes = %w(
 names = Set.new
 
 STDIN.each_line(chomp: true) do |line|
+  line.gsub!(/\s*#.*\z/, '') # remove comments
+  next if line.strip == ''
   name = line.strip.downcase
   name.gsub!(/\A#{Regexp.union(areas.map(&Regexp.method(:escape)))}/, '')
   name.gsub!(/\A#{Regexp.union(attrs.map(&Regexp.method(:escape)))}/, '')

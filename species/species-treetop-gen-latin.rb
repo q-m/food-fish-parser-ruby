@@ -17,6 +17,8 @@ names_second = Set.new
 
 STDIN.each_line(chomp: true) do |line|
   line.gsub!(/\s*\(.*?\)/, '') # remove text between brackets
+  line.gsub!(/\s*#.*\z/, '')   # remove comments
+  next if line.strip == ''
   first, second = line.strip.split(/\s+/, 2)
   names_first.add(first.downcase)
   names_second.add(second.downcase) if second

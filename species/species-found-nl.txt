@@ -1,6 +1,9 @@
 Arkschelp
 Albacore tonijn
 Alaskakoolvis
+Alaska koolvis
+Alaska pollock
+Alaska pollak
 Ansjovis
 Atlantische zalm
 Barracuda
@@ -35,6 +38,7 @@ Hoki
 Hondstong
 Kabeljauw
 Karper
+Kleine tonijn
 Kokkel
 Koolvis
 Kreeft
@@ -68,7 +72,11 @@ Sprot
 Tapijtschelp
 Tarbot
 Tilapia
+Tonijn
+Tonijn albacore
+Thon albacore
 Tong
+Witpootgarnaal
 Weekdier
 Weekdieren
 Wijting
