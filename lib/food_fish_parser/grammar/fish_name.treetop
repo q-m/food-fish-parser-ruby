@@ -4,18 +4,27 @@ module FoodFishParser::Grammar
     include FishNameLatin
     include FishNameNL
 
-    rule fish_name
-      (
-        fish_name_nl ws* '(' ws* fish_name_latin ws* ')' /
-        fish_name_nl /
-        fish_name_latin
-      )
-      <FishNameNode>
+    rule fish_name_both
+      ( fish_name_nl ws* '(' ws* fish_name_latin ( ws* ')' / comma )? )
     end
 
-    rule fish_name_list
-      fish_name ( ws+ and_or ws+ fish_name )*
+    rule fish_name_both_list
+      ( fish_name_both <FishNameNode> )
+      ( ws+ and_or ws+ fish_name_both <FishNameNode> )*
     end
 
+    rule fish_name_latin_list
+      ( fish_name_latin <FishNameNode> )
+      ( ws+ and_or ws+ fish_name_latin <FishNameNode> )*
+    end
+
+    rule fish_name_nl_list
+      ( fish_name_nl <FishNameNode> )
+      ( ws+ and_or ws+ fish_name_nl <FishNameNode> )*
+    end
+
+    rule fish_name_any_list
+      fish_name_both_list / fish_name_latin_list / fish_name_nl_list
+    end
   end
 end

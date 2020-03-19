@@ -18,8 +18,10 @@ module FoodFishParser::Grammar
     rule root
       (
         ( fish_with_info ( ws* fish_sep ws* fish_with_info )* ) /
-        ( fish_only_names ( ws* fish_sep ws* fish_only_names )* ) /
-        ( fish_only_info ( ws* fish_sep ws* fish_only_info )* )
+        ( fish_names_both ( ws* fish_sep ws* fish_names_both )* ) /
+        ( fish_names_latin ( ws* fish_sep ws* fish_names_latin )* ) /
+        ( fish_only_info ( ws* fish_sep ws* fish_only_info )* ) /
+        ( fish_names_nl ( ws* fish_sep ws* fish_names_nl )* )
       )
       ws* '.'? ws*
       <RootNode>
@@ -31,8 +33,10 @@ module FoodFishParser::Grammar
     rule root_anywhere
       (
         ( !fish_with_info . )* ( fish_with_info ( ( !fish_with_info . )* fish_with_info )* ) ( !fish_with_info . )* /
-        ( !fish_only_names . )* ( fish_only_names ( ( !fish_only_names . )+ fish_only_names )* ) ( !fish_only_names . )* /
-        ( !fish_only_info . )* ( fish_only_info ( ( !fish_only_info . )+ fish_only_info )* ) ( !fish_only_info . )*
+        ( !fish_names_both . )* ( fish_names_both ( ( !fish_names_both . )+ fish_names_both )* ) ( !fish_names_both . )* /
+        ( !fish_names_latin . )* ( fish_names_latin ( ( !fish_names_latin . )+ fish_names_latin )* ) ( !fish_names_latin . )* /
+        ( !fish_only_info . )* ( fish_only_info ( ( !fish_only_info . )+ fish_only_info )* ) ( !fish_only_info . )* /
+        ( !fish_names_nl . )* ( fish_names_nl ( ( !fish_names_nl . )+ fish_names_nl )* ) ( !fish_names_nl . )*
       )
       <RootNode>
     end
@@ -45,15 +49,25 @@ module FoodFishParser::Grammar
     # fish with catch or aquaculture info
     rule fish_with_info
       (
-        ( fish_name_list ( ws* ( comma / ':' ) )? ws+ fish_catch_info ) /
-        ( fish_name_list ( ws* ( comma / ':' ) )? ws+ fish_aquac_info )
+        ( fish_name_any_list ( ws* ( comma / ':' ) )? ws+ fish_catch_info ) /
+        ( fish_name_any_list ( ws* ( comma / ':' ) )? ws+ fish_aquac_info )
       )
       <FishNode>
     end
 
-    # fish names only
-    rule fish_only_names
-      fish_name_list <FishNode>
+    # fish names common and latin
+    rule fish_names_both
+      fish_name_both_list <FishNode>
+    end
+
+    # fish names Latin only
+    rule fish_names_latin
+      fish_name_latin_list <FishNode>
+    end
+
+    # fish names NL only
+    rule fish_names_nl
+      fish_name_nl_list <FishNode>
     end
 
     # catch or aquaculture info only (no names)
