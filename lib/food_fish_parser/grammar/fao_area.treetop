@@ -45,8 +45,9 @@ module FoodFishParser::Grammar
 
     rule fao_area_sub_code
       (
-        ( ( dash / '/' / ws* )? [ivxIVX]+ ) /
-        ( dash [0-9] [0-9] )
+        # IVX for roman numals, but l for incorrectly OCR-ed text
+        ( ( dash / '/' / ws* )? [ivxIVXl]+ ) /
+        ( dash [0-9]+ )
       )
       fao_area_suffix?
       (
