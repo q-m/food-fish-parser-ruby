@@ -27,10 +27,10 @@ module FoodFishParser
 
         attrs = {
           names: names,
-          catch_areas: nil,
-          catch_methods: nil,
-          aquaculture_areas: nil,
-          aquaculture_methods: nil
+          catch_areas: [],
+          catch_methods: [],
+          aquaculture_areas: [],
+          aquaculture_methods: []
         }
 
         if is_wild && !is_aquac
