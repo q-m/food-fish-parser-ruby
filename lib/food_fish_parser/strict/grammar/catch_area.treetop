@@ -1,4 +1,4 @@
-module FoodFishParser::Grammar
+module FoodFishParser::Strict::Grammar
   grammar CatchArea
     include Common
     include Words

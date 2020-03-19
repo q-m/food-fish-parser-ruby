@@ -1,4 +1,4 @@
-module FoodFishParser::Grammar
+module FoodFishParser::Strict::Grammar
   grammar AquacMethod
     include Common
     include Words

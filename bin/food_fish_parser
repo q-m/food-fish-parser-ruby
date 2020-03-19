@@ -72,9 +72,14 @@ verbosity = 1
 files = []
 strings = []
 print = nil
+parser_name = :strict
 anywhere = false
 escape = false
 color = true
+PARSERS = {
+  strict: FoodFishParser::Strict::Parser,
+  flat:   FoodFishParser::Flat::Parser
+}
 OptionParser.new do |opts|
   opts.banner = <<-EOF.gsub(/^    /, '')
     Usage: #{$0} [options] --file|-f <filename>
@@ -88,7 +93,8 @@ OptionParser.new do |opts|
   opts.on("-q", "--[no-]quiet", "Only show summary.") {|q| verbosity = q ? 0 : 1 }
   opts.on("-p", "--parsed", "Only show lines that were successfully parsed.") {|p| print = :parsed }
   opts.on("-n", "--noresult", "Only show lines that had no result.") {|p| print = :noresult }
-  opts.on("-a", "--[no-]anywhere", "Search for fish details anywhere in the text.") {|a| anywhere = !!a }
+  opts.on("-r", "--parser PARSER", "Use specific parser (#{PARSERS.keys.join(", ")}).") {|p| parser_name = p&.downcase&.to_sym }
+  opts.on("-a", "--[no-]anywhere", "Search for fish details anywhere in the text (only strict parser).") {|a| anywhere = !!a }
   opts.on("-e", "--[no-]escape", "Escape newlines") {|e| escape = !!e }
   opts.on("-c", "--[no-]color", "Use color") {|e| color = !!e }
   opts.on("-v", "--[no-]verbose", "Show more data (parsed tree).") {|v| verbosity = v ? 2 : 1 }
@@ -103,7 +109,10 @@ OptionParser.new do |opts|
 end.parse!
 
 if strings.any? || files.any?
-  parser = FoodFishParser::Parser.new
+  unless parser = PARSERS[parser_name]&.new
+    STDERR.puts("Please specify one of the known parsers: #{PARSERS.keys.join(", ")}.")
+    exit(1)
+  end
   success = true
   strings.each {|s| success &= parse_single(s, parser: parser, verbosity: verbosity, print: print, escape: escape, color: color, anywhere: anywhere) }
   files.each   {|f| success &= parse_file(f, parser: parser, verbosity: verbosity, print: print, escape: escape, color: color, anywhere: anywhere) }

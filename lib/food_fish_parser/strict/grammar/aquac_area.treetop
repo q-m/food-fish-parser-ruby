@@ -1,5 +1,5 @@
 
-module FoodFishParser::Grammar
+module FoodFishParser::Strict::Grammar
   grammar AquacArea
     include Common
     include Words

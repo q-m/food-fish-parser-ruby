@@ -18,6 +18,8 @@ gem install food_fish_parser
 
 ## Example
 
+### Strict parser
+
 ```ruby
 require 'food_fish_parser'
 
@@ -28,7 +30,7 @@ s = <<EOT.gsub(/\n/, '').strip
   kabeljauw (gadus macrocephalus), vangstgebied stille oceaan fao 67, garnaal
   (litopenaeus vannamei), gekweekt in ecuador, kweekmethode: vijver.
 EOT
-parser = FoodFishParser::Parser.new
+parser = FoodFishParser::Strict::Parser.new
 puts parser.parse(s).to_a.inspect
 ```
 
@@ -74,13 +76,15 @@ Results in a list of detected fishes
 ]
 ```
 
+### Anywhere
+
 When you have a piece of text and don't know where (or if) any fish details are
 present, you can use the `anywhere` option.
 
 ```ruby
 require 'food_fish_parser'
 
-parser = FoodFishParser::Parser.new
+parser = FoodFishParser::Strict::Parser.new
 s = "tomaat, vis (zalm (salmo salar) gevangen in Noorwegen), zout"
 puts parser.parse(s, anywhere: true).to_a.inspect
 ```
@@ -104,6 +108,43 @@ While the parser would normally return nothing, with `anywhere` it returns:
 
 Please note that the `anywhere` option can make the parser much slower.
 
+### Flat parser
+
+While the strict parser can recognize the structure of multiple fishes, it is really
+strict about what it expects. Many cases are not recognized, or sometimes incomplete.
+
+The flat parser does basic named entity recognition anywhere in the text. Any structure
+is lost, so it always returns an array with one or zero items - but you get all the
+FAO regions and fish names found.
+
+```ruby
+require 'food_fish_parser'
+
+parser = FoodFishParser::Flat::Parser.new
+s = "Foobar zalm (salmo salar) *&! gevangen pangasius spp FAO 61 ?or ?FAO 67 what more.")
+puts parser.parse(s).to_a.inspect
+```
+
+```
+[
+  {
+    :names => [
+      { :common=>"zalm", :latin=>"salmo salar" },
+      { :common=>nil, :latin=>"pangasius spp" }
+    ],
+    :catch_areas => [
+      { :name=>nil, :fao_codes=>["61"] },
+      { :name=>nil, :fao_codes=>["67"] }
+    ],
+    :catch_methods       => [],
+    :aquaculture_areas   => [],
+    :aquaculture_methods => []
+  }
+]
+```
+
+This might be expanded to more information at some point.
+
 
 ## Test tool
 
@@ -120,6 +161,7 @@ Usage: bin/food_fish_parser [options] --file|-f <filename>
     -q, --[no-]quiet                 Only show summary.
     -p, --parsed                     Only show lines that were successfully parsed.
     -n, --noresult                   Only show lines that had no result.
+    -r, --parser PARSER              Use specific parser (strict, flat).
     -a, --[no-]anywhere              Search for fish details anywhere in the text.
     -e, --[no-]escape                Escape newlines
     -c, --[no-]color                 Use color

@@ -1,7 +1,7 @@
 require 'treetop/runtime'
 
 # Needs to be in grammar namespace so Treetop can find the nodes.
-module FoodFishParser
+module FoodFishParser::Strict
   module Grammar
 
     # Additions for Treetop nodes, include this in other nodes where needed.
