@@ -48,7 +48,7 @@ module FoodFishParser::Strict::Grammar
 
     # separator between fish declarations
     rule fish_sep
-      and_or / '.' / comma
+      and_or / '.' / ';' / comma
     end
 
     # fish with catch or aquaculture info
