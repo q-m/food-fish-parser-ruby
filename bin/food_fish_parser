@@ -114,8 +114,8 @@ if strings.any? || files.any?
     exit(1)
   end
   success = true
-  strings.each {|s| success &= parse_single(s, parser: parser, verbosity: verbosity, print: print, escape: escape, color: color, anywhere: anywhere) }
-  files.each   {|f| success &= parse_file(f, parser: parser, verbosity: verbosity, print: print, escape: escape, color: color, anywhere: anywhere) }
+  strings.each {|s| success &= parse_single(s, parser: parser, verbosity: verbosity, print: print, escape: escape, color: color, anywhere: anywhere) == 0 }
+  files.each   {|f| success &= parse_file(f, parser: parser, verbosity: verbosity, print: print, escape: escape, color: color, anywhere: anywhere) == 0 }
   success or exit(1)
 else
   STDERR.puts("Please specify one or more --file or --string arguments (see --help).")
