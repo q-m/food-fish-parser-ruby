@@ -16,7 +16,6 @@ names_first = Set.new
 names_second = Set.new
 
 STDIN.each_line(chomp: true) do |line|
-  line.gsub!(/\s*\(.*?\)/, '') # remove text between brackets
   line.gsub!(/\s*#.*\z/, '')   # remove comments
   line.downcase!
   line.strip!
@@ -25,6 +24,8 @@ STDIN.each_line(chomp: true) do |line|
   first, second = line.split(/\s+/, 2)
   # 'alle' is too generic, we only want to detect 'alle alle'
   first, second = line, nil if first == 'alle'
+  # also don't split lines with bracket
+  first, second = line, nil if line =~ /\(.+?\)/
 
   names_first.add(first)
   names_second.add(second) if second

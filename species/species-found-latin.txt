@@ -25,6 +25,7 @@ Engraulis ringens
 Engraulis spp
 Ensis directus
 Euthynnus spp
+Euthynnus (Katsuwonus) pelamis # ALIAS Katsuwonus pelamis
 Fucus vesiculosus
 Gadus macrocephalus
 Gadus morhua
@@ -38,11 +39,11 @@ Homarus spp
 Illex argentinus
 Illex spp
 Katsuwonus pelamis
-Katsuwonus pelatis
-Katsuwonus pelanis
-Katsuwomus pelamis
-Katwonus pelamis
-Katwomus pelamis
+Katsuwonus pelatis # ALIAS Katsuwonus pelamis
+Katsuwonus pelanis # ALIAS Katsuwonus pelamis
+Katsuwomus pelamis # ALIAS Katsuwonus pelamis
+Katwonus pelamis # ALIAS Katsuwonus pelamis
+Katwomus pelamis # ALIAS Katsuwonus pelamis
 Laminaria digitata
 Laminaria japonica
 Lates niloticus
