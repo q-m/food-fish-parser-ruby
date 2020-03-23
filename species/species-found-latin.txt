@@ -154,7 +154,6 @@ Thunnus thynnus
 Todarodes pacificus
 Trachurus murphyi
 Trichiurus lepturus
-Undaria pinnatifida
 Xiphias gladius
 Xiphopenaeus kroyeri
 Zeus faber
