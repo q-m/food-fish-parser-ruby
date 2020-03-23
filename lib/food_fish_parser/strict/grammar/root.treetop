@@ -40,7 +40,7 @@ module FoodFishParser::Strict::Grammar
           fish_names_latin ( ( !char . )+ ( !fish_names_latin char+ ( !char . )+ )* fish_names_latin )* !char /
         ( ( !char . )* ( !fish_only_info   char+ ( !char . )+ )+ )*
           fish_only_info   ( ( !char . )+ ( !fish_only_info   char+ ( !char . )+ )* fish_only_info   )* !char /
-        ( ( !char . )* ( !fish_names_lnl   char+ ( !char . )+ )+ )*
+        ( ( !char . )* ( !fish_names_nl    char+ ( !char . )+ )+ )*
           fish_names_nl    ( ( !char . )+ ( !fish_names_nl    char+ ( !char . )+ )* fish_names_nl    )* !char
       )
       <RootNode>
