@@ -4,7 +4,6 @@ Alle alle
 Anadara antiquata
 Anguilla anguilla
 Anguilla anquilla # ALIAS Anguilla anguilla
-Ascophyllum nodosum
 Caulerpa lentillifera
 Cerastoderma edule
 Cerastoderm edule # ALIAS Cerastoderma edule
@@ -155,7 +154,6 @@ Thunnus thynnus
 Todarodes pacificus
 Trachurus murphyi
 Trichiurus lepturus
-Ulva lactuca
 Undaria pinnatifida
 Xiphias gladius
 Xiphopenaeus kroyeri
