@@ -7,12 +7,14 @@ Anguilla anquilla # ALIAS Anguilla anguilla
 Ascophyllum nodosum
 Caulerpa lentillifera
 Cerastoderma edule
+Cheilopogon atrisignis
 Chlorella pyrenoidosa
 Chlorella vulgaris
 Chondrus crispus
 Chondrus ocellatus
 Clarias gariepinus
 Clupea harengus
+Conger conger
 Crangon crangon
 Crassostrea gigas
 Dicentrarchus labrax
@@ -80,11 +82,13 @@ Nephrops norvegicus
 Octopus vulgaris
 Oncorhynchus gorbuscha
 Oncorhynchus gorbusche # ALIAS Oncorhynchus gorbuscha
+Orcorhynchus gorbusche # ALIAS Oncorhynchus gorbuscha
 Oncorhynchus keta
 Oncorhynchus kisutch
 Oncorhynchus mykiss
-Oncorhynchus myki?s
-Oncorhynchus mykis
+Oncorhynchus myki?s # ALIAS Oncorhynchus mykiss
+Oncorhynchus mykis # ALIAS Oncorhynchus mykiss
+Orcorhynchus mykis # ALIAS Oncorhynchus mykiss
 Oncorhynchus nerka
 Oncorhynchus spp
 Oreochromis niloticus
@@ -121,6 +125,7 @@ Portunus pelagicus
 Procambarus clarkii
 Psetta maxima
 Reinhardtius hippoglossoides
+Reinhardtius hippoglossus # ALIAS Reinhardtius hippoglossoides
 Saccharina latissima
 Salmo salar
 Salmo solar # ALIAS Salmo salar
@@ -141,6 +146,10 @@ Stolephorus spp
 Theragra chalcogramma
 Thunnus alalunga
 Thunnus albacares
+Thunnus maccoyii
+Thunnus obesus
+Thunnus orientalis
+Thunnus thynnus
 Todarodes pacificus
 Trachurus murphyi
 Trichiurus lepturus

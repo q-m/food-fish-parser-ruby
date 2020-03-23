@@ -16,14 +16,14 @@ require 'date'
 names = Set.new
 
 areas = %w(
-  atlantische alaska argentijnse groenlandse indische pacifische noorse
+  atlantische alaska argentijnse groenlandse indische japanse pacifische noorse ijsselmeer
 ).sort_by(&:length).reverse
 attrs = %w(
-  witte wit witpoot rood rode roze blauwe blauw groene groen zwarte zwart
-  coho doorn chum pijl groot grote klein kleine rivier
+  witte wit witpoot rood rode roze blauwe blauw groene groen zwarte zwart blonde blond
+  grise coho doorn chum pijl groot grote klein kleine rivier
 ).sort_by(&:length).reverse
 suffixes = %w(
-  filets filet vlees ring ringen
+  filets filet filetes vlees ring ringen steur kaviaar eiwit wang moten
 )
 
 names = Set.new
@@ -46,7 +46,7 @@ module FoodFishParser::Strict::Grammar
     include Common
 
     rule fish_name_nl
-      ( 'verse'i ws+ )?
+      ( 'verse'i ws+ / 'kaviaar'i ws+ 'van'i ws+ / 'kaviaar'i ws+ / 'gevilde'i ws+ )?
       ( fish_name_nl_area ws+ )? ( fish_name_nl_attr ws* )? fish_name_nl_name fish_name_nl_suffix?
       <FishNameCommonNode>
     end
@@ -82,7 +82,7 @@ module FoodFishParser
       REGEX_SUFX = /#{suffixes.sort.reverse.map {|s| Regexp.escape(s) }.join("|")}/i
 
       REGEX = /
-        (?: \\b verse \\s+ )?
+        (?: \\b verse \\s+ | \\b kaviaar \\s+ | \\b kaviaar \\s+ van \\s+ | \\b gevilde \\s+ )?
         \\b
         (
           (?: \#{REGEX_AREA} \\s+ )? (?: \#{REGEX_ATTR} \\s* )? \#{REGEX_NAME} (?: \#{REGEX_SUFX} )?
