@@ -8,8 +8,6 @@ Ascophyllum nodosum
 Caulerpa lentillifera
 Cerastoderma edule
 Cheilopogon atrisignis
-Chlorella pyrenoidosa
-Chlorella vulgaris
 Chondrus crispus
 Chondrus ocellatus
 Clarias gariepinus
@@ -140,7 +138,6 @@ Sepia officinalis
 Sepiella japonica
 Solea solea
 Sparus aurata
-Spirulina platensis
 Sprattus sprattus
 Stolephorus spp
 Theragra chalcogramma

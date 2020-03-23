@@ -37,6 +37,7 @@ Daurade # ALIAS Dorade
 Doornhaai
 Escolar
 Fint
+Forel
 Garnaal
 Garnalen
 Geelvintonijn
@@ -65,6 +66,7 @@ King clip
 Kleine tonijn
 Kokkel
 Koolvis
+Krab
 Kreeft
 Leng
 Lom
