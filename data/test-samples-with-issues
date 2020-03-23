@@ -18,12 +18,6 @@ KABELJAUW (Gadus morhua). In de Barentsz Zee ((FAO 27 (I)), de Noorse Zee (FAO 2
 Alaska koolvis (Theragra chalcogramma), Vangstgebied > FAO 67 noord Oost pacific 67-01A & FAO 61 Noord West pacific 61-02A, Vangstmethode > Trawlnetten.
 Alaska koolvis (Theragra chalcogramma), gevangen met trawlnetten in het Noordwestelijke deel (FAO 61)* of in het Noordoostelijke deel (FAO 67)* van de Stille Oceaan.
 
-# OCR errors / typo's
-Gevangen in Spitsbergen en Bereneiland (FAO 27/llb), Vangstmethode: trawlnetten.
-
-# fish name/species typo's
-macruronus novaezealandiae, gevangen in de stille oceaan (vangstgebied fao 81) met trawlnetten
-
 # others
 Schelvisfilet, lijngevangen, afkomstig van duurzame visserij in de wateren rond IJsland
 
@@ -44,6 +38,8 @@ skipjack tonijn ((VIS) (Katsuwonus pelamis) gevangen met ringnetten in de Stille
 Gevangen in de centrale Noordzee (FAO 27/IVb,vangstmethode: dubbelebordentrawls
 
 Gevangen met korren. FAO27.
+
+Alaska pollakfilet, uit de Stille Oceaan # allow 'uit' as indicator word after a fish name
 
 # variants that we won't recognize, use (regexp) parser based on named entity recognition
 Deze ansjovis in koudgeperste Siciliaanse olijfolie, wordt gevangen in de Middelandse Zee.
