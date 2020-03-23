@@ -17,11 +17,11 @@ module FoodFishParser::Strict::Grammar
     # info.
     rule root
       (
-        ( fish_with_info ( ws* fish_sep ws* fish_with_info )* ) /
-        ( fish_names_both ( ws* fish_sep ws* fish_names_both )* ) /
+        ( fish_with_info   ( ws* fish_sep ws* fish_with_info   )* ) /
+        ( fish_names_both  ( ws* fish_sep ws* fish_names_both  )* ) /
         ( fish_names_latin ( ws* fish_sep ws* fish_names_latin )* ) /
-        ( fish_only_info ( ws* fish_sep ws* fish_only_info )* ) /
-        ( fish_names_nl ( ws* fish_sep ws* fish_names_nl )* )
+        ( fish_only_info   ( ws* fish_sep ws* fish_only_info   )* ) /
+        ( fish_names_nl    ( ws* fish_sep ws* fish_names_nl    )* )
       )
       ws* '.'? ws*
       <RootNode>
@@ -32,16 +32,16 @@ module FoodFishParser::Strict::Grammar
     # Note that this can be a much more expensive operation.
     rule root_anywhere
       (
-        ( ( !fish_with_info !word_sep . )+ word_sep )*
-          ( fish_with_info ( ( word_sep ( !fish_with_info !word_sep . )* )+ fish_with_info )* ) !char /
-        ( ( !fish_names_both !word_sep . )+ word_sep )*
-          ( fish_names_both ( ( word_sep ( !fish_names_both !word_sep . )* )+ fish_names_both )* ) !char /
-        ( ( !fish_names_latin !word_sep . )+ word_sep )*
-          ( fish_names_latin ( ( word_sep ( !fish_names_latin !word_sep . )* )+ fish_names_latin )* ) !char /
-        ( ( !fish_only_info !word_sep . )+ word_sep )*
-          ( fish_only_info ( ( word_sep ( !fish_only_info !word_sep . )* )+ fish_only_info )* ) !char /
-        ( ( !fish_names_nl !word_sep . )+ word_sep )*
-          ( fish_names_nl ( ( word_sep ( !fish_names_nl !word_sep . )* )+ fish_names_nl )* ) !char
+        ( ( !char . )* ( !fish_with_info   char+ ( !char . )+ )+ )*
+          fish_with_info   ( ( !char . )+ ( !fish_with_info   char+ ( !char . )+ )* fish_with_info   )* !char /
+        ( ( !char . )* ( !fish_names_both  char+ ( !char . )+ )+ )*
+          fish_names_both  ( ( !char . )+ ( !fish_names_both  char+ ( !char . )+ )* fish_names_both  )* !char /
+        ( ( !char . )* ( !fish_names_latin char+ ( !char . )+ )+ )*
+          fish_names_latin ( ( !char . )+ ( !fish_names_latin char+ ( !char . )+ )* fish_names_latin )* !char /
+        ( ( !char . )* ( !fish_only_info   char+ ( !char . )+ )+ )*
+          fish_only_info   ( ( !char . )+ ( !fish_only_info   char+ ( !char . )+ )* fish_only_info   )* !char /
+        ( ( !char . )* ( !fish_names_lnl   char+ ( !char . )+ )+ )*
+          fish_names_nl    ( ( !char . )+ ( !fish_names_nl    char+ ( !char . )+ )* fish_names_nl    )* !char
       )
       <RootNode>
     end
