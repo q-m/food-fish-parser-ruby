@@ -34,7 +34,8 @@ STDIN.each_line(chomp: true) do |line|
   name = line.strip.downcase
   name.gsub!(/\A#{Regexp.union(areas.map(&Regexp.method(:escape)))}/, '')
   name.gsub!(/\A#{Regexp.union(attrs.map(&Regexp.method(:escape)))}/, '')
-  name.gsub!(/#{Regexp.union(suffixes.map(&Regexp.method(:escape)))}\z/, '')
+  stripped = name.gsub(/#{Regexp.union(suffixes.map(&Regexp.method(:escape)))}\z/, '')
+  name = stripped unless stripped.length < 3
   names.add(name.strip)
 end
 
