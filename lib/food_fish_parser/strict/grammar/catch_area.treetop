@@ -5,10 +5,10 @@ module FoodFishParser::Strict::Grammar
     include FaoArea
 
     rule catch_area_indicator
-      ( 'wild'i ws* )?
+      ( ( comma ws* )? ( 'wildfang'i / 'wild'i ) ws* ( comma ws* )? )?
       (
         'gevangen'i ws+ ( 'in'i / 'op'i ) /
-        'visgebied'i / 'vangstgebied'i / 'vangsgebied'i /
+        'visgebied'i / 'vangstgebied'i / 'vangsgebied'i / 'fanggebiet'i /
         'betrapt bij'i
       )
       !char

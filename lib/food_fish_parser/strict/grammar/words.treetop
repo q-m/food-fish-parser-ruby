@@ -36,8 +36,11 @@ module FoodFishParser::Strict::Grammar
         'gevangen'i /
         'visgebied'i /
         'vangstgebied'i /
+        'fanggebiet'i /
         'vangstmethode'i /
         'vangsmethode'i /
+        'fangmethoden'i /
+        'fangmethode'i /
         'betrapt'i /
         'aquacultuurproduct'i /
         'gekweekt'i /
