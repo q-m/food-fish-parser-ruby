@@ -7,6 +7,7 @@ Anguilla anquilla # ALIAS Anguilla anguilla
 Ascophyllum nodosum
 Caulerpa lentillifera
 Cerastoderma edule
+Cerastoderm edule # ALIAS Cerastoderma edule
 Cheilopogon atrisignis
 Chondrus crispus
 Chondrus ocellatus
@@ -51,7 +52,9 @@ Lethrinus spp
 Limanda limanda
 Lithodes santolla
 Litopenaeus vannamei
+Litopenaeus vannamel # ALIAS Litopenaeus vannamei
 Litopenaeus cannamei # ALIAS Litopenaeus vannamei
+Litopenaeus cannamel # ALIAS Litopenaeus vannamei
 Loligo edulis
 Loligo spp
 Loligo vulgaris
