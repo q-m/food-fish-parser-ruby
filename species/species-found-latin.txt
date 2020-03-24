@@ -1,15 +1,11 @@
 Acipenser gueldenstaedtii
-Alaria esculenta
 Alle alle
 Anadara antiquata
 Anguilla anguilla
 Anguilla anquilla # ALIAS Anguilla anguilla
-Caulerpa lentillifera
 Cerastoderma edule
 Cerastoderm edule # ALIAS Cerastoderma edule
 Cheilopogon atrisignis
-Chondrus crispus
-Chondrus ocellatus
 Clarias gariepinus
 Clupea harengus
 Conger conger
@@ -29,8 +25,6 @@ Euthynnus (Katsuwonus) pelamis # ALIAS Katsuwonus pelamis
 Gadus macrocephalus
 Gadus morhua
 Gadus morhue # ALIAS Gadus morhua
-Gelidium spp
-Gracilaria verrucosa
 Haematococcus pluvialis
 Himanthalia elongata
 Homarus americanus
@@ -43,8 +37,6 @@ Katsuwonus pelanis # ALIAS Katsuwonus pelamis
 Katsuwomus pelamis # ALIAS Katsuwonus pelamis
 Katwonus pelamis # ALIAS Katsuwonus pelamis
 Katwomus pelamis # ALIAS Katsuwonus pelamis
-Laminaria digitata
-Laminaria japonica
 Lates niloticus
 Lepidopsetta bilineata
 Lepidotrigla microptera
@@ -60,7 +52,6 @@ Loligo edulis
 Loligo spp
 Loligo vulgaris
 Lophius piscatorius
-Macrocystis pyrifera
 Macruronus magellanicus
 Macruronus novaezelandiae
 Macruronus novaezealandiae # ALIAS Macruronus novaezelandiae
@@ -77,7 +68,6 @@ Mytilus chilensis
 Mytilus edulis
 Mytilus galloprovincialis
 Mytilus spp
-Nelumbo nucifera
 Nemipterus hexodon
 Nemipterus spp
 Nephrops norvegicus
@@ -97,7 +87,6 @@ Oreochromis niloticus
 Ostrea edulis
 Ovalipes punctatus
 Pagellus bogaraveo
-Palmaria palmata
 Pandalus borealis
 Pandalus jordani
 Pangasius hyptophthalmus
@@ -116,7 +105,6 @@ Penaeus monodon
 Penaeus spp
 Penaeus vannamei
 Perna canaliculus
-Phymatolithon calcareum
 Placopecten magellanicus
 Pleoticus muelleri
 Pleuronectes platessa
