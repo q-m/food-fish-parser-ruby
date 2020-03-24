@@ -24,6 +24,7 @@ Engraulis ringens
 Engraulis spp
 Ensis directus
 Euthynnus spp
+Euthynnus (Katsuwonus) # Most probably Katsuwonus pelamis, but could be species pluralis
 Euthynnus (Katsuwonus) pelamis # ALIAS Katsuwonus pelamis
 Gadus macrocephalus
 Gadus morhua
