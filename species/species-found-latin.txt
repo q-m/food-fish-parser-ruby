@@ -25,7 +25,6 @@ Engraulis spp
 Ensis directus
 Euthynnus spp
 Euthynnus (Katsuwonus) pelamis # ALIAS Katsuwonus pelamis
-Fucus vesiculosus
 Gadus macrocephalus
 Gadus morhua
 Gadus morhue # ALIAS Gadus morhua

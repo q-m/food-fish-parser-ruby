@@ -23,7 +23,8 @@ STDIN.each_line(chomp: true) do |line|
 
   first, second = line.split(/\s+/, 2)
   # 'alle' is too generic, we only want to detect 'alle alle'
-  first, second = line, nil if first == 'alle'
+  # 'octopus' is also too generic, only detect full genus
+  first, second = line, nil if ['alle', 'octopus'].include?(first)
   # also don't split lines with bracket
   first, second = line, nil if line =~ /\(.+?\)/
 
