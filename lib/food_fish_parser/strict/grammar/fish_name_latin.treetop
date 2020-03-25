@@ -5,6 +5,7 @@ module FoodFishParser::Strict::Grammar
     include FishAllergen
 
     rule fish_name_latin
+      '(' ws* fish_name_latin ws* ')' /
       fish_name_latin_first ( ws+ fish_name_latin_second )?
       ( ws* fish_allergen )?
       <FishNameLatinNode>

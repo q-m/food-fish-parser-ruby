@@ -48,6 +48,7 @@ module FoodFishParser::Strict::Grammar
     include FishAllergen
 
     rule fish_name_nl
+      '(' ws* fish_name_nl ws* ')' /
       ( 'verse'i ws+ / 'kaviaar'i ws+ 'van'i ws+ / 'kaviaar'i ws+ / 'gevilde'i ws+ )?
       ( fish_name_nl_area ws+ )? ( fish_name_nl_attr ws* )? fish_name_nl_name fish_name_nl_suffix?
       ( ws* fish_allergen )?
