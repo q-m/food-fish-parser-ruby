@@ -44,6 +44,7 @@ Lethrinus spp
 Limanda limanda
 Lithodes santolla
 Litopenaeus vannamei
+Litopenaeus vannemei # ALIAS Litopenaeus vannamei
 Litopenaeus vannamel # ALIAS Litopenaeus vannamei
 Litopenaeus cannamei # ALIAS Litopenaeus vannamei
 Litopenaeus cannamel # ALIAS Litopenaeus vannamei
@@ -116,10 +117,10 @@ Procambarus clarkii
 Psetta maxima
 Reinhardtius hippoglossoides
 Reinhardtius hippoglossus # ALIAS Reinhardtius hippoglossoides
-Saccharina latissima
 Salmo salar
 Salmo solar # ALIAS Salmo salar
 Sardina pilchardus
+Sardina piclhardus # ALIAS Sardina pilchardus
 Sardinella gibbosa
 Scomber japonicus
 Scomber scombrus
