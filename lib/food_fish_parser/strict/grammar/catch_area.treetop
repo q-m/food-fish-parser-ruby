@@ -7,7 +7,7 @@ module FoodFishParser::Strict::Grammar
     rule catch_area_indicator
       ( ( comma ws* )? ( 'wildfang'i / 'wild'i ) ws* ( comma ws* )? )?
       (
-        'gevangen'i ws+ ( 'in'i / 'op'i ) /
+        'gevangen'i ws+ catch_area_indicator_preposition /
         'visgebied'i / 'vangstgebied'i / 'vangsgebied'i / 'fanggebiet'i /
         'betrapt bij'i
       )
@@ -17,7 +17,11 @@ module FoodFishParser::Strict::Grammar
 
     rule catch_area_indicator_short
       catch_area_indicator /
-      ( 'in'i / 'op'i ) !char ( ws* ':' )?
+      catch_area_indicator_preposition !char ( ws* ':' )?
+    end
+
+    rule catch_area_indicator_preposition
+      'in'i / 'op'i / 'voor'i
     end
 
     rule catch_area_content
