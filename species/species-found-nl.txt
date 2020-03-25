@@ -1,10 +1,10 @@
 Alfonsino
 Arkschelp
 Albacore tonijn
-Alaskakoolvis
 Alaska koolvis
 Alaska pollock
 Alaska pollak
+Alaskakoolvis # ALIAS Alaska koolvis
 Ansjovis
 Ansovis # ALIAS Ansjovis
 Atlantische zalm
@@ -12,7 +12,7 @@ Bacalao
 Barracuda
 Barracumundi
 Cocquilles
-Coquilles
+Coquilles # ALIAS Cocquilles
 Zeesnoek
 Baars
 Beekridder
@@ -45,6 +45,7 @@ Geelvin tonijn
 Geep
 Groenraat
 Griet
+Grote garnalen
 Groenlandse heilbot
 Grootoogtonijn
 Grouper
@@ -87,10 +88,12 @@ Paling
 Pangasius
 Pieterman
 Pilchard
+Pijlinktvis
 Pollak
 Red grouper
 Red snapper
 Riddervis
+Rivierkreeft
 Regenboogforel
 Rode poon
 Rode zalm
@@ -119,6 +122,7 @@ Skipjack tuna
 Skrei
 Sliptong
 Snapper
+Sockeye zalm
 Blood snapper
 Snoek
 Snoekbaars
@@ -142,6 +146,7 @@ Weekdieren
 Wijting
 Witte tonijn
 Witvis
+Zalm
 Zeebaars
 Zeeforel
 Zeekreeft
