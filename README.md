@@ -125,7 +125,7 @@ s = "Foobar zalm (salmo salar) *&! gevangen pangasius spp FAO 61 ?or ?FAO 67 wha
 puts parser.parse(s).to_a.inspect
 ```
 
-```
+```ruby
 [
   {
     :names => [
