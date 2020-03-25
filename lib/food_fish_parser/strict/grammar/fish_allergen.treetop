@@ -1,0 +1,15 @@
+module FoodFishParser::Strict::Grammar
+  grammar FishAllergen
+    include Common
+
+    rule fish_allergen
+       '(' ws* fish_allergen_text ws* ')' /
+       comma ws* fish_allergen_text /
+       fish_allergen_text ( ws* comma )?
+    end
+
+    rule fish_allergen_text
+      'vis'i
+    end
+  end
+end

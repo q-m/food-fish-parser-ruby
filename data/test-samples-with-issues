@@ -1,4 +1,5 @@
 # multiple fishing areas with a/b/c
+# https://github.com/q-m/food-fish-parser-ruby/issues/2
 Alaska KOOLVIS gevangen in: A = het Noordwestelijke deel Stille Oceaan (FAO 61) gevangen met trawlnetten of B = het Noordoostelijke deel Stille Oceaan (FAO 67) 
 Gevangen in A=Noordoostelijke deel Stille Oceaan (FAO 67) gevangen met trawlnetten of B=Noordwestelijke deel Stille Oceaan (FAO 61) gevangen met trawlnetten
 gevangen met trawlnetten in fao 27-i barentszzee (a), fao27-iia noorse zee (b), fao27-iib spitsbergen en bereneiland (c))
@@ -39,9 +40,11 @@ Gevangen in de centrale Noordzee (FAO 27/IVb,vangstmethode: dubbelebordentrawls
 
 Gevangen met korren. FAO27.
 
-Alaska pollakfilet, uit de Stille Oceaan # allow 'uit' as indicator word after a fish name
+# allow 'uit' as indicator word after a fish name
+# https://github.com/q-m/food-fish-parser-ruby/issues/3
+Alaska pollakfilet, uit de Stille Oceaan
 
-# variants that we won't recognize, use (regexp) parser based on named entity recognition
+# variants that we won't recognize, try the flat parser based on named entity recognition
 Deze ansjovis in koudgeperste Siciliaanse olijfolie, wordt gevangen in de Middelandse Zee.
 Stille Oceaan, Noordwest, FAO 61/ Stille Oceaan, Noordoost, FAO 67.
 Xiphopenaeus kroyeri. FAO 31

@@ -1,11 +1,12 @@
 module FoodFishParser::Strict::Grammar
   grammar FishName
     include Common
+    include FishAllergen
     include FishNameLatin
     include FishNameNL
 
     rule fish_name_both
-      ( fish_name_nl ws* '(' ws* fish_name_latin ( ws* ')' / comma )? )
+      ( fish_name_nl ws* '(' ( ws* fish_allergen )? ws* fish_name_latin ( ws* ')' / comma )? )
     end
 
     rule fish_name_both_list

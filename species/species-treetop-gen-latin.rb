@@ -42,9 +42,11 @@ puts <<EOF
 module FoodFishParser::Strict::Grammar
   grammar FishNameLatin
     include Common
+    include FishAllergen
 
     rule fish_name_latin
       fish_name_latin_first ( ws+ fish_name_latin_second )?
+      ( ws* fish_allergen )?
       <FishNameLatinNode>
     end
 
