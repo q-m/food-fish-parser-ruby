@@ -121,7 +121,7 @@ FAO regions and fish names found.
 require 'food_fish_parser'
 
 parser = FoodFishParser::Flat::Parser.new
-s = "Foobar zalm (salmo salar) *&! gevangen pangasius spp FAO 61 ?or ?FAO 67 what more.")
+s = "Foobar zalm (salmo salar) *&! gevangen met lijnen pangasius spp FAO 61 ?or ?FAO 67 what more.")
 puts parser.parse(s).to_a.inspect
 ```
 
@@ -136,7 +136,7 @@ puts parser.parse(s).to_a.inspect
       { :name=>nil, :fao_codes=>["61"] },
       { :name=>nil, :fao_codes=>["67"] }
     ],
-    :catch_methods       => [],
+    :catch_methods       => [{ :text=>"lijnen" }],
     :aquaculture_areas   => [],
     :aquaculture_methods => []
   }
