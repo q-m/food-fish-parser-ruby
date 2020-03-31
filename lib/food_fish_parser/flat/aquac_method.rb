@@ -5,6 +5,7 @@ module FoodFishParser
       REGEX = /
         (
           kweekvijvers? |
+          vijvers?\s*\/\s*bassins? |
           (?:open\s+)? kooien (?: in\s+zee | in\s+rivier )? |
           doorstroomsystemen |
           (?:open\s+)? hangcultuur |
