@@ -16,7 +16,7 @@ require 'date'
 names = Set.new
 
 areas = %w(
-  atlantische alaska argentijnse groenlandse indische japanse pacifische noorse ijsselmeer
+  atlantische alaska argentijnse groenlandse indische japanse pacifische pacific noorse ijsselmeer
 ).sort_by(&:length).reverse
 attrs = %w(
   witte wit witpoot rood rode roze blauwe blauw groene groen zwarte zwart blonde blond
@@ -50,7 +50,13 @@ module FoodFishParser::Strict::Grammar
     rule fish_name_nl
       '(' ws* fish_name_nl ws* ')' /
       ( 'verse'i ws+ / 'kaviaar'i ws+ 'van'i ws+ / 'kaviaar'i ws+ / 'gevilde'i ws+ )?
-      ( fish_name_nl_area ws+ )? ( fish_name_nl_attr ws* )? fish_name_nl_name fish_name_nl_suffix?
+      (
+        fish_name_nl_area ws+ fish_name_nl_attr ws+ /
+        fish_name_nl_attr ws+ fish_name_nl_area ws+ /
+        fish_name_nl_area ws+ /
+        fish_name_nl_attr ws+
+      )?
+      fish_name_nl_name fish_name_nl_suffix?
       ( ws* fish_allergen )?
       <FishNameCommonNode>
     end
