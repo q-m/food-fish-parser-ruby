@@ -31,7 +31,7 @@ module FoodFishParser::Strict::Grammar
     end
 
     rule fish_name_nl_suffix
-      'wang'i / 'vlees'i / 'steur'i / 'ringen'i / 'ring'i / 'moten'i / 'kaviaar'i / 'filets'i / 'filetes'i / 'filet'i / 'eiwit'i
+      'wang'i / 'vlees'i / 'steur'i / 'ringen'i / 'ring'i / 'moten'i / 'lever'i / 'kaviaar'i / 'filets'i / 'filetes'i / 'filet'i / 'eiwit'i
     end
   end
 end

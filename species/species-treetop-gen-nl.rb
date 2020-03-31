@@ -23,7 +23,7 @@ attrs = %w(
   grise coho doorn chum pijl groot grote klein kleine rivier
 ).sort_by(&:length).reverse
 suffixes = %w(
-  filets filet filetes vlees ring ringen steur kaviaar eiwit wang moten
+  filets filet filetes vlees ring ringen steur kaviaar eiwit wang moten lever
 )
 
 names = Set.new
