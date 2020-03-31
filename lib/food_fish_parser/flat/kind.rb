@@ -9,8 +9,8 @@ module FoodFishParser
         (?:
           gevangen |
           visgebied |
-          vangstgebied |
-          vangsgebied |
+          vangst?gebied |
+          visvangst |
           betrapt \s+ bij |
           wilde? \s+ #{FishNameNL::REGEX} |
           MSC # certificate is for wild fish only

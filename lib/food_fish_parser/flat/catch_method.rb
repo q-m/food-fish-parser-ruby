@@ -21,7 +21,8 @@ module FoodFishParser
           hengels?\s+en\s+lijn(?:en)? |
           met\s+de\s+hengel |
           met\s+lijnen |
-          vallen
+          vallen |
+          purse\s*seiner
         ) (?:visserij)?
         \b
       /ix

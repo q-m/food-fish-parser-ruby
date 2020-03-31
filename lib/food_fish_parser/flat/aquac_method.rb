@@ -4,13 +4,15 @@ module FoodFishParser
 
       REGEX = /
         (
-          kweekvijvers? |
-          vijvers?\s*\/\s*bassins? |
-          (?:open\s+)? kooien (?: in\s+zee | in\s+rivier )? |
-          doorstroomsystemen |
-          (?:open\s+)? hangcultuur |
-          gekweekt\s+in\s+netten
+          kwekerij(?:en)? |
+          \bkweekvijvers? |
+          \bvijvers?(?:\s*\/\s*bassins?)? |
+          \b(?:open\s+)? kooien (?: in\s+zee | in\s+rivier )? |
+          \bdoorstroomsystemen |
+          \b(?:open\s+)? hangcultuur |
+          \bgekweekt\s+in\s+netten
         )
+        \b
       /ix
 
       def self.find_all(text)
