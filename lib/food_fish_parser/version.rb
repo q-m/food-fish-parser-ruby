@@ -1,4 +1,4 @@
 module FoodFishParser
-  VERSION      = '0.3.7'
-  VERSION_DATE = '2020-03-25'
+  VERSION      = '0.3.8'
+  VERSION_DATE = '2020-03-31'
 end
