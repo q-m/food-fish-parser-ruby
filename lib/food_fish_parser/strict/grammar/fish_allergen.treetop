@@ -9,7 +9,7 @@ module FoodFishParser::Strict::Grammar
     end
 
     rule fish_allergen_text
-      'vis'i / 'visvlees'i / 'weekdieren'i
+      'visvlees'i / 'vis'i / 'weekdieren'i / 'schaaldieren'i
     end
   end
 end
