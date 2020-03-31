@@ -12,7 +12,8 @@ module FoodFishParser
           vangstgebied |
           vangsgebied |
           betrapt \s+ bij |
-          wilde? \s+ #{FishNameNL::REGEX}
+          wilde? \s+ #{FishNameNL::REGEX} |
+          MSC # certificate is for wild fish only
         )
         \b
       /ix
@@ -24,7 +25,8 @@ module FoodFishParser
           aquacultuurproduct |
           aquacultuur \s+ product |
           kweekmethode |
-          kweekmethoden
+          kweekmethoden |
+          ASC # certificate is for aquaculture fish only
         )
         \b
       /ix
