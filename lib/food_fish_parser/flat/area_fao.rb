@@ -1,6 +1,6 @@
 module FoodFishParser
   module Flat
-    module FaoRegion
+    module AreaFao
 
       REGEX_CODE = / 0?\d{2} (?: (?: -0?\d{2} | (?: \/ | - | \s+ | ) [lIV]+ ) [a-d]? )? /ix
       REGEX = /

@@ -1,5 +1,6 @@
 require_relative 'fish_name'
-require_relative 'fao_region'
+require_relative 'area_fao'
+require_relative 'area_name'
 require_relative 'catch_method'
 require_relative 'aquac_method'
 require_relative 'kind'
@@ -19,7 +20,7 @@ module FoodFishParser
       # @return [Array<Hash>] structured representation of fish details (maximum one item)
       def parse(s, **options)
         names = FishName.find_all(s)
-        areas = FaoRegion.find_all(s)
+        areas = AreaName.find_all(s) + AreaFao.find_all(s)
         catch_methods = CatchMethod.find_all(s)
         aquac_methods = AquacMethod.find_all(s)
 

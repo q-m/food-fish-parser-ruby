@@ -7,7 +7,7 @@ module FoodFishParser
           kwekerij(?:en)? |
           \bkweekvijvers? |
           \bvijvers?(?:\s*\/\s*bassins?)? |
-          \b(?:open\s+)? kooien (?: in\s+zee | in\s+rivier )? |
+          \b(?:open\s+)? kooien (?: \s+in\s+zee | \s+in\s+rivier )? |
           \bdoorstroomsystemen |
           \b(?:open\s+)? hangcultuur |
           \bgekweekt\s+in\s+netten
