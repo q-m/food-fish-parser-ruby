@@ -54,8 +54,9 @@ module FoodFishParser::Strict::Grammar
     # fish with catch or aquaculture info
     rule fish_with_info
       (
-        ( fish_name_any_list ( ws* ( comma / ':' ) )? ws+ fish_catch_info ) /
-        ( fish_name_any_list ( ws* ( comma / ':' ) )? ws+ fish_aquac_info )
+        # @todo move optional '(' after common fish name to root and properly match start and end brackets
+        ( fish_name_any_list ( ws* ( comma / ':' ) )? ws+ fish_catch_info ( ws* ')' )? ) /
+        ( fish_name_any_list ( ws* ( comma / ':' ) )? ws+ fish_aquac_info ( ws* ')' )? )
       )
       <FishNode>
     end
