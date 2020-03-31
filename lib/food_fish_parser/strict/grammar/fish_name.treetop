@@ -6,7 +6,7 @@ module FoodFishParser::Strict::Grammar
     include FishNameNL
 
     rule fish_name_both
-      ( fish_name_nl ws* '(' ( ws* fish_allergen )? ws* fish_name_latin ( ws* ')' / comma )? )
+      ( !fish_allergen fish_name_nl ws* '(' ( ws* fish_allergen )? ws* fish_name_latin ( ws* ')' / comma )? )
     end
 
     rule fish_name_both_list
@@ -20,8 +20,8 @@ module FoodFishParser::Strict::Grammar
     end
 
     rule fish_name_nl_list
-      ( fish_name_nl <FishNameNode> )
-      ( ws+ and_or ws+ fish_name_nl <FishNameNode> )*
+      ( !fish_allergen fish_name_nl <FishNameNode> )
+      ( ws+ and_or ws+ !fish_allergen fish_name_nl <FishNameNode> )*
     end
 
     rule fish_name_any_list

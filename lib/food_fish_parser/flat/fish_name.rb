@@ -4,14 +4,15 @@ require_relative 'fish_name_nl'
 module FoodFishParser
   module Flat
     module FishName
-      REGEX_VIS = /\s*(?: \(\s*vis\s*\) | \b,?\s*vis\s*,?\s*\b )/ix
+      REGEX_ALLERGEN_NAMES = /\b(?:vis|visvlees|weekdieren)\b/i
+      REGEX_ALLERGEN = /\s*(?: \(\s*#{REGEX_ALLERGEN_NAMES}\s*\) | \b,?\s*#{REGEX_ALLERGEN_NAMES}\s*,?\s*\b )/ix
 
       REGEX = /
         (?:
-          #{FishNameNL::REGEX} (?: #{REGEX_VIS} )? \s* \( \s* #{FishNameLatin::REGEX} \s* \) |
-          #{FishNameNL::REGEX} \s*,?\s* \b #{FishNameLatin::REGEX} |
+          (?!#{REGEX_ALLERGEN}) #{FishNameNL::REGEX} (?: #{REGEX_ALLERGEN} )? \s* \( \s* #{FishNameLatin::REGEX} \s* \) |
+          (?!#{REGEX_ALLERGEN}) #{FishNameNL::REGEX} \s*,?\s* \b #{FishNameLatin::REGEX} |
           #{FishNameLatin::REGEX} |
-          #{FishNameNL::REGEX}
+          (?!#{REGEX_ALLERGEN}) #{FishNameNL::REGEX}
         )
       /ix
 
