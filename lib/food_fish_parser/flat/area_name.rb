@@ -57,7 +57,7 @@ module FoodFishParser
           .scan(REGEX)
           .flatten
           .compact
-          .map {|s| { text: s.strip } }
+          .map {|s| { text: s.strip.sub(/^(de|het|een)\s*/, ''), fao_codes: [] } }
       end
     end
   end

@@ -28,7 +28,7 @@ module FoodFishParser
 
       def self.find_all(text)
         find_all_code_groups(text)
-          .map {|a| { name: nil, fao_codes: a } }
+          .map {|a| { text: nil, fao_codes: a } }
       end
     end
   end
