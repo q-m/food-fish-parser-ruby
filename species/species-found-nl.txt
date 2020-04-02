@@ -85,6 +85,7 @@ Neustong
 Nijlbaars
 Pagre
 Paling
+Panga # ALIAS Pangasius
 Pangasius
 Pieterman
 Pilchard
@@ -95,6 +96,7 @@ Red snapper
 Riddervis
 Rivierkreeft
 Regenboogforel
+Red salmon # ALIAS Rode zalm
 Rode poon
 Rode zalm
 Roze zalm
@@ -103,6 +105,7 @@ Rode poon
 Roodbaars
 Rogvleugel
 Rouget
+Salmon # ALIAS Zalm
 Saibling
 Seabob garnalen
 Sardine
@@ -137,6 +140,7 @@ Tarbot
 Tilapia
 Tonijn
 Tonijn albacore
+Tonijn skipjack
 Thon albacore
 Tong
 Vliegende vis

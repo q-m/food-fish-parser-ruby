@@ -5,7 +5,7 @@ module FoodFishParser
       REGEX_CODE = / 0?\d{2} (?: (?: -0?\d{2} | (?: \/ | - | \s+ | ) [lIV]+ ) [a-d]? )? /ix
       REGEX = /
         \b FA[O0]
-        \s* (?: -? (?:zone|gebied) )? \s* (?:nummer|nr\.?|,)?
+        \s* (?: -? (?:zone|gebied|area) )? \s* (?:nummer|nr\.?|,)?
         \s*
         (
           #{REGEX_CODE}

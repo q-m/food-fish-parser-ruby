@@ -90,8 +90,9 @@ Ovalipes punctatus
 Pagellus bogaraveo
 Pandalus borealis
 Pandalus jordani
-Pangasius hyptophthalmus
-Pangasius hypophtalmus # ALIAS Pangasius hyptophthalmus
+Pangasius hypophthalmus
+Pangasius hyptophthalmus # ALIAS Pangasius hypophthalmus
+Pangasius hypophtalmus # ALIAS Pangasius hypophthalmus
 Pangasius pangasius
 Pangasius spp
 Paphia undulata

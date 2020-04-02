@@ -6,9 +6,10 @@ module FoodFishParser
         \b
         (
           trawlnet(?:ten)? |
-          trawler |
+          (?:pelagische\s+)? trawler (?:\s*,?\s*pelagisch)? |
+          pelagische\s+visserij |
           haken\s+en\s+lijnen |
-          (machinale\s+)? handlijnen |
+          (?:machinale\s+)? handlijnen |
           ring-\s+en\s+kruisnet(?:ten)? |
           ringnet(?:ten)? |
           kruisnet(?:ten)? |

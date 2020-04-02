@@ -38,6 +38,9 @@ Gevangen in de centrale Noordzee (FAO 27/IVb,vangstmethode: dubbelebordentrawls
 
 Gevangen met korren. FAO27.
 
+# confusion between common and Latin name
+Pangasiusfilet Pangasius (Pangasius hypophthalmus), gekweekt in Vietnam
+
 # allow 'uit' as indicator word after a fish name
 # https://github.com/q-m/food-fish-parser-ruby/issues/3
 Alaska pollakfilet, uit de Stille Oceaan

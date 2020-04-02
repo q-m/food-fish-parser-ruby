@@ -19,7 +19,7 @@ areas = %w(
   atlantische alaska argentijnse groenlandse indische japanse pacifische pacific noorse ijsselmeer
 ).sort_by(&:length).reverse
 attrs = %w(
-  witte wit witpoot rood rode roze blauwe blauw groene groen zwarte zwart blonde blond
+  witte wit witpoot red rood rode roze blauwe blauw groene groen zwarte zwart blonde blond
   grise coho doorn chum pijl groot grote klein kleine rivier
 ).sort_by(&:length).reverse
 suffixes = %w(
@@ -49,6 +49,7 @@ module FoodFishParser::Strict::Grammar
 
     rule fish_name_nl
       '(' ws* fish_name_nl ws* ')' /
+      '{' ws* fish_name_nl ws* '}' /
       ( 'verse'i ws+ / 'kaviaar'i ws+ 'van'i ws+ / 'kaviaar'i ws+ / 'gevilde'i ws+ )?
       (
         fish_name_nl_area ws+ fish_name_nl_attr ws+ /

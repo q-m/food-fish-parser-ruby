@@ -41,7 +41,7 @@ module FoodFishParser
           (?: de\s+ (?: kust | fjorden ) \s+van\s+ )?
           (?: (?:\(sub\))?tropische\s+wateren\s+in\s+ )?
           (?: (?: de | het ) \s+ )?
-          (?: (?: \s* (?:noord|zuid|oost|west)-? )+(?:elijke?\s+(?: deel | gedeelte )\s+van)? \s+ )?
+          (?: (?: \s* (?:noord|zuid|oost|west|n|z|o|w)-? )+(?:elijke?)? (?: \s+(?: deel | gedeelte ) (?:\s+van)? )? \s+ )?
           (?: (?: de | het ) \s+ )?
           #{REGEX_AREA_NAMES}
         )
@@ -57,7 +57,7 @@ module FoodFishParser
           .scan(REGEX)
           .flatten
           .compact
-          .map {|s| { text: s.strip.sub(/^(de|het|een)\s*/, ''), fao_codes: [] } }
+          .map {|s| { text: s.strip, fao_codes: [] } }
       end
     end
   end

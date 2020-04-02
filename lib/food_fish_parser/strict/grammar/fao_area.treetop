@@ -22,7 +22,7 @@ module FoodFishParser::Strict::Grammar
     rule fao_area_indicator
       ( 'vangstgebied'i ws+ )?
       ( 'FAO'i / 'FA0'i )
-      ( ( dash / ws+ ) 'gebied'i )? ( ws* 'nr'i '.'? )?
+      ( ( dash / ws+ ) 'gebied'i / 'area'i )? ( ws* 'nr'i '.'? )?
     end
 
     rule fao_area_code
