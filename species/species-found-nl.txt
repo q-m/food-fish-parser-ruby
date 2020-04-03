@@ -108,6 +108,7 @@ Rouget
 Salmon # ALIAS Zalm
 Saibling
 Seabob garnalen
+Seabob garnaal # ALIAS Seabob garnalen
 Sardine
 Sardien # ALIAS Sardine
 Sardines # ALIAS Sardine
