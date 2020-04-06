@@ -13,7 +13,6 @@ Crangon crangon
 Crassostrea gigas
 Dicentrarchus labrax
 Dosidicus gigas
-Dunaliella salina
 Engraulis anchoita
 Engraulis encrasicolus
 Engraulis ringens
@@ -25,8 +24,6 @@ Euthynnus (Katsuwonus) pelamis # ALIAS Katsuwonus pelamis
 Gadus macrocephalus
 Gadus morhua
 Gadus morhue # ALIAS Gadus morhua
-Haematococcus pluvialis
-Himanthalia elongata
 Homarus americanus
 Homarus spp
 Illex argentinus
@@ -100,7 +97,6 @@ Paralomis granulosa
 Parapenaeopsis stylifera
 Patinopecten yessoensis
 Pecten maximus
-Pelvetia canaliculata
 Penaeidae
 Penaeus merguiensis
 Penaeus monodon
@@ -111,8 +107,6 @@ Placopecten magellanicus
 Pleoticus muelleri
 Pleuronectes platessa
 Pollachius virens
-Porphyra tenera
-Porphyra umbilicalis
 Portunus pelagicus
 Procambarus clarkii
 Psetta maxima
