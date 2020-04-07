@@ -16,20 +16,20 @@ module FoodFishParser
           Limfjord |
           Denemarken |
           Chili |
-          Faroër eilanden |
+          Faroër\s+(?:eilanden|islands) |
           Groenland |
           Californi[eë] |
           Malediven |
           Spitsbergen |
           Bereneiland |
           Maleisi[eë] |
+          Ijsland
           (?:
             atlantische | atlantic | pacifische | pacific | stille | noorse |
             middelandse | indische
-          ) \s+ (?: oceaan | ocean | zee) |
+          ) \s+ (?: oceaan | ocean | zee(?:en|ën)? ) |
           Noordzee |
-          Barentszzee |
-          Ijsland
+          Barentszzee
         )
         \b
       /ix
@@ -37,7 +37,7 @@ module FoodFishParser
       REGEX_AREA = /
         \b
         (
-          (?: (?: rond | bij | aan | voor ) \s+ )?
+          (?: (?:zee(?:en|ën)?\s+)? (?: rond | bij | aan | voor ) \s+ )?
           (?: de\s+ (?: kust | fjorden ) \s+van\s+ )?
           (?: (?:\(sub\))?tropische\s+wateren\s+in\s+ )?
           (?: (?: de | het ) \s+ )?
