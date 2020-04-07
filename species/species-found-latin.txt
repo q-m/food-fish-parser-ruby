@@ -1,67 +1,110 @@
 Acipenser gueldenstaedtii
+Acipenseridae spp
+Aequipecten opercularis
 Alle alle
 Anadara antiquata
+Anarhichas lupus
 Anguilla anguilla
 Anguilla anquilla # ALIAS Anguilla anguilla
+Aphanopus carbo
+Argyrosomus regius
+Belone belone
+Beryx spp.
+Buccinum undatum
+Cancer pagurus
 Cerastoderma edule
 Cerastoderm edule # ALIAS Cerastoderma edule
 Cheilopogon atrisignis
+Chelidonichthys cuculus
+Chelidonichthys lucernus
+Chelon labrosus
 Clarias gariepinus
 Clupea harengus
 Conger conger
+Coryphaena hippurus
 Crangon crangon
 Crassostrea gigas
+Cyclopterus lumpus
+Cynoglossus senegalensis
+Cyprinus carpio
 Dicentrarchus labrax
+Dissostichus eleginoides
 Dosidicus gigas
 Engraulis anchoita
 Engraulis encrasicolus
 Engraulis ringens
 Engraulis spp
 Ensis directus
-Euthynnus spp
+Epinephelus spp
+Euphausia superba
 Euthynnus (Katsuwonus) # Most probably Katsuwonus pelamis, but could be species pluralis
 Euthynnus (Katsuwonus) pelamis # ALIAS Katsuwonus pelamis
+Euthynnus spp
+Eutrigla gurnardus
 Gadus macrocephalus
 Gadus morhua
 Gadus morhue # ALIAS Gadus morhua
+Glyptocephalus cynoglossus
+Hippoglossus hippoglossus
+Hippoglossus stenolepis
 Homarus americanus
+Homarus gammarus
 Homarus spp
+Hoplostethus atlanticus
+Huso huso
 Illex argentinus
 Illex spp
+Istiompax indica
 Katsuwonus pelamis
 Katsuwonus pelatis # ALIAS Katsuwonus pelamis
 Katsuwonus pelanis # ALIAS Katsuwonus pelamis
-Katsuwomus pelamis # ALIAS Katsuwonus pelamis
-Katwonus pelamis # ALIAS Katsuwonus pelamis
 Katwomus pelamis # ALIAS Katsuwonus pelamis
+Katwonus pelamis # ALIAS Katsuwonus pelamis
 Lates niloticus
+Lepidocybium flavobrunneum
 Lepidopsetta bilineata
 Lepidotrigla microptera
 Lethrinus spp
+Limanda aspera
 Limanda limanda
 Lithodes santolla
-Litopenaeus vannamei
-Litopenaeus vannemei # ALIAS Litopenaeus vannamei
-Litopenaeus vannamel # ALIAS Litopenaeus vannamei
 Litopenaeus cannamei # ALIAS Litopenaeus vannamei
 Litopenaeus cannamel # ALIAS Litopenaeus vannamei
-Peraeus vannamei # ALIAS Litopenaeus vannamei
+Litopenaeus vannamei
+Litopenaeus vannamel # ALIAS Litopenaeus vannamei
+Litopenaeus vannemei # ALIAS Litopenaeus vannamei
+Littorina littorea
 Loligo edulis
 Loligo spp
 Loligo vulgaris
 Lophius piscatorius
+Lophius piscatorus
+Lutjanus spp.
+Macrobranchium rosenbergii
 Macruronus magellanicus
-Macruronus novaezelandiae
 Macruronus novaezealandiae # ALIAS Macruronus novaezelandiae
+Macruronus novaezelandiae
+Makaira spp
 Melanogrammus aeglefinus
 Merlangius merlangus
 Merluccius capensis
+Merluccius gayi gayi
+Merluccius hubbsi
 Merluccius merluccius
+Merluccius paradoxus
 Merluccius productus
 Metapenaeus monoceros
 Metapenaeus spp
 Micromesistius australis
+Micromesistius poutassou
+Microstomus kitt
+Mimachlamys varia
+Molva dypterygia
+Molva molva
 Mulinia spp
+Mullus barbatus
+Mullus surmuletus
+Mycteroptera spp.
 Mytilus chilensis
 Mytilus edulis
 Mytilus galloprovincialis
@@ -72,62 +115,88 @@ Nephrops norvegicus
 Octopus vulgaris
 Oncorhynchus gorbuscha
 Oncorhynchus gorbusche # ALIAS Oncorhynchus gorbuscha
-Orcorhynchus gorbusche # ALIAS Oncorhynchus gorbuscha
 Oncorhynchus keta
 Oncorhynchus kisutch
-Oncorhynchus mykiss
 Oncorhynchus myki?s # ALIAS Oncorhynchus mykiss
 Oncorhynchus mykis # ALIAS Oncorhynchus mykiss
-Orcorhynchus mykis # ALIAS Oncorhynchus mykiss
+Oncorhynchus mykiss
 Oncorhynchus nerka
 Oncorhynchus spp
+Orcorhynchus gorbusche # ALIAS Oncorhynchus gorbuscha
+Orcorhynchus mykis # ALIAS Oncorhynchus mykiss
+Oncorhynchus tshawytscha
 Oreochromis niloticus
+Osmerus eperlanus
 Ostrea edulis
 Ovalipes punctatus
 Pagellus bogaraveo
+Palinarus spp
 Pandalus borealis
 Pandalus jordani
+Pandalus montagui
+Pangasius hypophtalmus # ALIAS Pangasius hypophthalmus
 Pangasius hypophthalmus
 Pangasius hyptophthalmus # ALIAS Pangasius hypophthalmus
-Pangasius hypophtalmus # ALIAS Pangasius hypophthalmus
 Pangasius pangasius
 Pangasius spp
 Paphia undulata
+Paralithodes camtschaticus
 Paralomis granulosa
 Parapenaeopsis stylifera
 Patinopecten yessoensis
 Pecten maximus
+Pectinidae
 Penaeidae
+Penaeus latisulcatus
 Penaeus merguiensis
 Penaeus monodon
 Penaeus spp
 Penaeus vannamei
+Peraeus vannamei # ALIAS Litopenaeus vannamei
+Perca fluviatilis
 Perna canaliculus
 Placopecten magellanicus
+Platichthys flesus
 Pleoticus muelleri
 Pleuronectes platessa
+Pollachius pollachius
 Pollachius virens
 Portunus pelagicus
+Portunus trituberculatus 
 Procambarus clarkii
 Psetta maxima
+Rajidae spp
 Reinhardtius hippoglossoides
 Reinhardtius hippoglossus # ALIAS Reinhardtius hippoglossoides
+Ruditapes philippinarum
 Salmo salar
 Salmo solar # ALIAS Salmo salar
-Sardina pilchardus
+Salvelinus alpinus
+Sander lucioperca
+Sarda sarda
 Sardina piclhardus # ALIAS Sardina pilchardus
 Sardinella gibbosa
+Scomber colias
 Scomber japonicus
 Scomber scombrus
 Scomber sombrus # ALIAS Scomber scombrus
+Scophthalmus maximus
+Scophthalmus rhombus
+Scortum Barcoo
+Scyliorhinus canicula
 Sebastes marinus
+Sebastes mentella
 Sebastes norvegicus
 Sepia officinalis
+Sepia pharaonis
 Sepiella japonica
+Seriola lalandi
 Solea solea
 Sparus aurata
+Sphyraena barracuda
 Sprattus sprattus
 Stolephorus spp
+Tetrapturus spp
 Theragra chalcogramma
 Thunnus alalunga
 Thunnus albacares
@@ -136,8 +205,13 @@ Thunnus obesus
 Thunnus orientalis
 Thunnus thynnus
 Todarodes pacificus
+Todarodes sagittatus
+Trachinus draco
 Trachurus murphyi
+Trachurus trachurus
 Trichiurus lepturus
+Trisopterus luscus
+Venus verrucosa
 Xiphias gladius
 Xiphopenaeus kroyeri
 Zeus faber

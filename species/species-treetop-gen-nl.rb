@@ -16,12 +16,14 @@ require 'date'
 names = Set.new
 
 areas = %w(
-  atlantische alaska argentijnse groenlandse indische japanse pacifische pacific
-  noorse chileense ijsselmeer
+  afrikaanse amerikaanse antarctische atlantische alaska argentijnse engelse
+  europese groenlandse indische japanse pacifische pacific noorse noordse chileense
+  ijsselmeer filipijnse zeeuwse kaapse aziatische tropische spaanse peruaanse
+  patagonische
 ).sort_by(&:length).reverse
 attrs = %w(
   witte wit witpoot red rood rode roze blauwe blauw groene groen zwarte zwart blonde blond
-  grise coho doorn chum pijl groot grote klein kleine rivier
+  grise doorn chum pijl groot grote klein kleine rivier bonte chinook coho chum plat platte
 ).sort_by(&:length).reverse
 suffixes = %w(
   filets filet filetes vlees ring ringen steur kaviaar eiwit wang moten lever
