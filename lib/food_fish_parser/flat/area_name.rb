@@ -23,7 +23,7 @@ module FoodFishParser
           Spitsbergen |
           Bereneiland |
           Maleisi[eë] |
-          Ijsland
+          Ijsland |
           (?:
             atlantische | atlantic | pacifische | pacific | stille | noorse |
             middelandse | indische
