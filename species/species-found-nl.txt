@@ -1,169 +1,464 @@
+Aal
+Achtarmige inktvis
+Acoupa ombervis
+Adalah
+Adelaarsvis
+Adriatische steur
+Afgeknotte gaper
+Afgeknotte strandschelp
 Afrikaanse meerval
 Alaska koolvis
 Alaskakoolvis # ALIAS Alaska koolvis
-Alaska pollak
-Alaska pollock
+Alaska pollak # ALIAS Alaska koolvis
+Alaska pollock # ALIAS Alaska koolvis
 Albacore tonijn
 Alfonsino
 Alikruik
+Alver
+Amerikaanse grote mantelschelp
 Amerikaanse kreeft
+Amerikaanse oester
+Amerikaanse paling
+Amerikaanse rivierkreeft
+Amerikaanse schol
+Amerikaanse snoekbaars
+Amerikaanse spiering
+Amerikaanse venusschelp
+Amerikaanse wulk
+Amerikaanse zeekreeft
+Amerikaanse zwaardschede
+Anjoemara
 Ansjovis
 Ansovis # ALIAS Ansjovis
 Arkschelp
+Atlantische bonito
+Atlantische draadvinnige haring
+Atlantische heek
+Atlantische maanvis
+Atlantische slibgarnaal
+Atlantische tarpoen
+Atlantische tonijn
 Atlantische zalm
+Atlantische zeilvis
+Australische paling
+Australische wijting
+Australische zalm
 Aziatische tong
+Baardman
 Baars
 Bacalao
+Bandeng
+Barbaman
+Barbeel
 Barracuda
 Barracumundi
+Barramundi
+Bastaardgeep
+Bastaardknorvis
+Beekforel
 Beekridder
+Beerkreeft
+Beluga
 Belugasteur
+Blankvoorn
+Blauwbaars
+Blauwe grenadier
+Blauwe haai
 Blauwe leng
+Blauwe marlijn
 Blauwe mossel
+Blauwe tegelvis
 Blauwe wijting
+Blauwe zeewolf
 Blauwe zwemkrab
+Blauwkeeltje
+Blauwneus
 Blauwvin tonijn
 Blauwvintonijn
 Blood snapper
+Bokvis
+Boniter
 Bonito
+Bonte mantel
 Bonte mantelschelp
 Bot
+Botermakreel
 Botervis
 Braadharing
+Braam
+Brasem
+Brasemblei
+Bronforel
+Brotula
+Bruine venusschelp
+Bruine zeekomkommer
+Bultige tandbrasem
+Californische rivierkreeft
+Canadese zeekreeft
+Caramote garnaal
 Caviaar
 Chileense heek
+Chileense springkrab
 Chileense zeebaars
+Chinese rivierkreeft
+Chinese wolhandkrab
 Chinook zalm
 Chum zalm
 Claresse
+Claresse meerval
 Cobia
 Cocquilles
 Cohozalm
-Conger aal
+Conger aal # ALIAS Conger all
+Congeraal
 Coquille # ALIAS Cocquilles
 Coquilles # ALIAS Cocquilles
 Corvina
+Datra fisi
 Daurade # ALIAS Dorade
+Diepzeegarnalen
+Diepzeekabeljauw
 Diepzee roodbaars
+Dikke platschelp
 Diklip harder
 Diklipharder # ALIAS Diklip harder
+Doktersvis
 Dolfijnvis
+Donaubrasem
+Donausteur
+Donau zalm
 Doornhaai
 Dorade
+Dorade royale
+Draadvinnige elft
+Drijfvis
+Dubbelgestippelde alver
+Dunlipharder
+Duorarum garnaal
+Dwergbolk
+Dwerginktvis
+Dwergmeerval
+Elft
+Elrits
 Engelse poon
 Escolar
+Europese heek
+Europese langoest
+Europese meerval
+Europese murene
+Europese platte oester
+Europese rivierkreeft
+Europese zeekreeft
 Filipijnse tapijtschelp
 Fint
 Forel
+Forellenbaars
+Franse tong
+Fregatmakreel
+Fuscabaardman
+Gaffelkabeljauw
+Galatheakreeft
 Gamba
 Garnaal
 Garnalen
+Gedoornde hartschelp
+Geelgestreepte horsmakreel
 Geelstaart koningsvis
+Geelvinmakreel
 Geelvin tonijn
 Geelvintonijn
 Geep
+Geribde hartschelp
+Gestekelde hartschelp
+Gestreepte bokvis
+Gestreepte marlijn
+Gestreepte tonijn
+Gestreepte venusschelp
+Gestreepte zeebaars
+Gestreepte zeebrasem
+Gevlekte garnaal
+Gevlekte rog
+Gevlekte zeebaars
+Gevlekte zeewolf
+Gewone alikruik
+Gewone mossel
+Gewone Pijlinktvis
+Gewone zeebrasem
+Gewone zeekreeft
+Giebel
+Gladde haai
+Glycymeris
+Goudbandmul
+Goudbrasem
+Gouden koningsklip
+Gouden valse snapper
+Goudgestreepte zeebrasem
+Goudharder
+Goudkleurige venusschelp
 Goudmakreel
 Goudstreep sardine
+Graskarper
+Gratenvis
 Grauwe poon
 Griet
+Grijze haai
+Groenlandse haai
 Groenlandse heilbot
+Groenlandse kabeljauw
 Groenraat
+Grootbek
+Grootkopkarper
+Grootoog
+Grootoogbrasem
+Grootoogtandbrasem
+Grootoog tonijn # ALIAS Grootoogtonijn
 Grootoogtonijn
 Grote barracuda
+Grote beerkreeft
+Grote duivelsrog
 Grote garnalen
+Grote geelstaart
+Grote marene
+Grote oester
 Grote pieterman
 Grote pijlinktvis
+Grote strandschelp
 Grouper
 Gruis
+Guinee garnaal
 Haai
+Haanvis
+Haarstaartdegenvis
+Haarstaartvis
 Hake
+Hamerhaai
 Hamvis
 Harder
 Harder diklip
 Haring
+Haringhaai
 Heek
 Heekrug
 Heilbot
+Hirame
 Hoki
+Hollandse garnaal
 Hondshaai
 Hondstong
 Horsmakreel
+Houting
+Indische makreel
 Inktvis
+Japanse lange schar
 Japanse oester
+Japanse paling
 Japanse schar
+Japanse vliegende vis
+Japanse zalm
+Japanse zeebaars
 John Dory
+Kaapse dageraad
 Kaapse heek
 Kabeljauw
+Kamtschatka krab
 Karper
+Kathaai
+Keilrog
+Keizerbaars
 Keizersbaars
+Keta zalm
+Kilka
 King clip
+Kinkhoorn
+Kleine beerkreeft
+Kleine duivelsrog
+Kleine marene
 Kleine tonijn
+Kleine zwaardschede
+Kleinoog ombervis
+Klimbaars
+Knorvis
+Kogeltonijn
+Kogelvis
+Kokhaan
 Kokkel
+Kolblei
+Konijnvis
 Koningsgarnaal
+Koningsklip
 Koningskrab
+Koningsmakreel
+Konings ombervis
+Koningsvis
 Koolvis
+Koornaarvis
+Kopvoorn
+Koraalbaars
 Krab
 Kreeft
+Kreukel
 Krill
+Krobia
+Kroeskarper
+Kumupoon
+Kuruma garnaal
+Kustbaardman
+Kwabaal
+Kwie kwie
+Lactariusvis
+Lange schar
 Langoest
 Langoustine
+Langstaart heek
+Langstaart tonijn
+Langvin Mako
+Leervis
 Lekkerbekje
 Leng
+Lepelsteur
+Lethrinus
+Lipvis
+Lodde
 Lom
+Maanstaart zeebaars
+Maanvis
 Maatjesharing
 Mahi mahi
 Mahi-mahi # ALIAS Mahi mahi
 Makreel
+Makreelgeep
+Makreelhaai
 Mantelschelp
+Marene
 Marlijn
+Marokkaanse tandbrasem
+Masu zalm
+Mediterrane pantsergarnaal
 Meerval
+Melkvis
+Menhaden
 Merluza
 Mesheft
+Messchede
+Meun
+Middellandsezeemossel
 Mossel
-Mosselen
+Mosselen # ALIAS Mossel
 Mul
+Murene
+Namaga kabeljauw
+Negenoog
+Neushaai
 Neustong
+Nieuwzeelandse horsmakreel
+Nieuwzeelandse mossel
+Nieuw Zeelandse paling
+Nieuw Zeelandse tarbot
 Nijlbaars
+Nonnetje
+Noordelijke grenadiervis
+Noordelijke kamschelp
+Noordhoorn
+Noordkromp
 Noordse garnaal
+Noordzeegarnaal
 Noordzeekrab
 Noorse garnaal
 Noorse kreeft
+Notialis garnaal
+Nylongarnaal
 Octopus
+Oktopus
+Olievis
+Olympia oester
 Ombervis
 Omegabaars
+Oostelijke nawaga
+Oostzeegarnaal
+Oostzeehouting
 Oregon garnaal
+Ovale strandschelp
+Pacifische Haring
 Pacifische heek
 Pacifische heilbot
 Pacifische kabeljauw
+Pacifische schol
 Pacifische zalm
+Pacifische zeilvis
 Pagre
+Pakoesi
 Paling
+Pandora
 Panga # ALIAS Pangasius
 Pangasius
+Pangasius meerval
+Panga zeebrasem
+Pantsermeerval
 Papegaaivis
 Patagonische ijsheek
+Patagonische ijsvis
+Pataka
+Peled marene
+Pelser
 Peruaanse ansjovis
 Pieterman
 Pijlinktvis
 Pilchard
+Pireng
+Pladijs
 Platte oester
+Plooibekken
 Pollak
-Red grouper
+Pomfret
+Pompano
+Ponyvis
+Poolkabeljauw
+Portugese oester
+Pos
+Puffervis
+Puitaal
+Red grouper # ALIAS Rode tandbaars
 Red salmon # ALIAS Rode zalm
-Red snapper
+Red snapper # ALIAS Rode snapper
 Regenboogforel
+Reuzehaai
 Reuzengarnaal
+Reuzenzeebaars
+Reuze strandschelp
 Riddervis
+Rietvoorn
+Riviergrondel
 Rivierkreeft
+Rivierprik
+Rode Argentijnse garnaal
+Rode beryx
+Rode diepzeegarnaal
+Rode heek
+Rode kabeljauw
+Rode koningsklip
 Rode mul
 Rode poon
+Rode schorpioenvis
+Rode snapper
+Rode tandbaars
 Rode zalm
+Rode zeebrasem
+Rog
 Rogvleugel
+Ronde haring
 Roodbaars
+Rood gevlekte garnaal
+Roofblei
+Ross-dwerginktvis
+Rotskabeljauw
 Rouget
+Roze diepzeegarnaal
 Roze garnaal
 Roze steurgarnaal
+Roze venusschelp
 Roze zalm
+Russels horsmakreel
+Ruwe haai
 Saibling
 Salmon # ALIAS Zalm
 Sardien # ALIAS Sardine
@@ -172,74 +467,175 @@ Sardine
 Sardinelle
 Sardinen # ALIAS Sardine
 Sardines # ALIAS Sardine
+Sardinops
 Scampi
+Schaalhoorn
 Schar
+Scharretong
 Schelp
 Schelpen
 Schelvis
+Scherpsnuitrog
 Schol
+Schoteloog zeebrasem
+Schotzalm
+Schurftvis
 Seabob garnaal # ALIAS Seabob garnalen
 Seabob garnalen
 Senegalese tong
+Serpeling
+Signaalkreeft
+Sint-Jacobsschelp # ALIAS St. Jacobsschelp
 Sint Jacobsschelp # ALIAS St. Jacobsschelp
 Sint-pietervis # ALIAS St. Pierre
-Skipjack
+Skipjack # ALIAS Skipjack tonijn
 Skipjack tonijn
-Skipjack tuna
+Skipjack tuna # ALIAS Skipjack tonijn
 Skrei
+Slangmakreel
+Slatdicksteur
+Sleutelgathoorn
+Slibgarnalen
 Sliptong
 Snapper
+Sneep
 Snoek
 Snoekbaars
+Snotdolf
 Snotolf
 Sockeye zalm
+Spaanse makreel
+Spaanse zeebrasem
+Spiegelkarper
+Spiegelrog
 Spiering
+Spitssnuitzeebrasem
+Springkrab
 Sprot
 Staartvis
 Steenbolk
+Steenhaai
 Steenwijting
+Stekelaal
+Stekelrog
+Sterlet
+Sterrekijker
+Stersteur
 Steur
+Steurgarnaal
+Stevige strandschelp
 St. Jacobsschelp
 Stokvis
+Stoleforus ansjovis
 St. Pierre
+Strandgaper
+Strandkrab
 Surimi
+Tafelmesheft
+Tandbaars
+Tandbrasem
 Tapijtschelp
 Tarbot
+Tarpoen
 Thon albacore
 Tijgergarnaal
 Tilapia
+Toekoenari
 Tong
 Tongschar
 Tonijn
 Tonijn albacore
-Tonijn skipjack
+Tonijn skipjack # ALIAS Skipjack tonijn
+Tonkin ombervis
+Trekkervis
+Turkse rivierkreeft
+Valse snapper
 Venusschelp
+Vermillioen snapper
 Victoriabaars
+Vioolrog
+Vlagzalm
+Vleet
 Vliegende vis
 Vongole
+Vorkpompano
+Voshaai
+Wahoo
+Walapa
 Weekdier
 Weekdieren
+West Afrikaanse rode mul
 Wijde mantel
 Wijting
+Winde
+Witbuikgarnaal
+Witgevlekte zeekomkommer
 Witje
 Witpootgarnaal
+Witpunthaai
 Witte koolvis
+Witte ombervis
+Witte steur
+Witte stompneus
 Witte tonijn
+Witte zeebrasem
 Witvis
+Wolfharing
+Wrakbaars
+Wrattige krab
+Wrattige venusschelp
 Wulk
 Yellowtail kingfish
+Zaagje
+Zadelzeebrasem
+Zakpijp
 Zalm
 Zalmforel
+Zandbaars
+Zandtong
+Zandvis
+Zebrabrasem
 Zeebaars
 Zeebarbeel
+Zeedonderpad
 Zeeduivel
+Zee-egel
+Zee-engel
 Zeeforel
+Zeekarper
 Zeekat
 Zeekreeft
+Zeelt
+Zeemeerval
+Zeeoor
 Zeepaling
+Zeeprik
+Zeeraaf
+Zeerat
+Zeeschijter
 Zeesnoek
 Zeetong
 Zeeuwse oester
 Zeewolf
+Zeskieuwhaai
+Zilveren degenvis
+Zilverheek
+Zilverkarper
+Zilver sillago
+Zilversmelt
+Zilverwijting
+Zoetlip
+Zoetwaterreuzegarnaal
 Zonnevis
+Zuid Afrikaanse gestreepte zeebrasem
 Zwaardvis
+Zwarte degenvis
+Zwarte grondel
+Zwarte heilbot
+Zwarte koningsklip
+Zwarte koolvis
+Zwarte Patagonische ijsvis
+Zwarte schorpioenvis
+Zwarte zee-egel
+Zwartkopzeebrasem
+Zwartvin rifhaai

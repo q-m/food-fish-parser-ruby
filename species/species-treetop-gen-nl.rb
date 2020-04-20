@@ -19,14 +19,17 @@ areas = %w(
   afrikaanse amerikaanse antarctische atlantische alaska argentijnse engelse
   europese groenlandse indische japanse pacifische pacific noorse noordse chileense
   ijsselmeer filipijnse zeeuwse kaapse aziatische tropische spaanse peruaanse
-  patagonische
+  patagonische chinese turkse guinee portugese mediterrane marokkaanse franse
+  nieuwzeelandse hollandse
 ).sort_by(&:length).reverse
 attrs = %w(
   witte wit witpoot red rood rode roze blauwe blauw groene groen zwarte zwart blonde blond
   grise doorn chum pijl groot grote klein kleine rivier bonte chinook coho chum plat platte
+  oog zilver zilveren ruwe reuze gestreepte gestekelde gevlekte gewone grijs grijze goud gouden
+  spiegel diepzee
 ).sort_by(&:length).reverse
 suffixes = %w(
-  filets filet filetes vlees ring ringen steur kaviaar eiwit wang moten lever
+  filets filet filetes vlees ringen steur kaviaar eiwit wang moten lever
 )
 
 names = Set.new
@@ -35,9 +38,9 @@ STDIN.each_line(chomp: true) do |line|
   line.gsub!(/\s*#.*\z/, '') # remove comments
   next if line.strip == ''
   name = line.strip.downcase
-  name.gsub!(/\A#{Regexp.union(areas.map(&Regexp.method(:escape)))}/, '')
-  name.gsub!(/\A#{Regexp.union(attrs.map(&Regexp.method(:escape)))}/, '')
-  stripped = name.gsub(/#{Regexp.union(suffixes.map(&Regexp.method(:escape)))}\z/, '')
+    .sub(/\A#{Regexp.union(areas.map(&Regexp.method(:escape)))}\b/i, '')
+    .sub(/\A#{Regexp.union(attrs.map(&Regexp.method(:escape)))}/i, '')
+  stripped = name.sub(/#{Regexp.union(suffixes.map(&Regexp.method(:escape)))}\z/i, '')
   name = stripped unless stripped.length < 3
   names.add(name.strip)
 end
