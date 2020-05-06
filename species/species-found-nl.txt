@@ -12,6 +12,7 @@ Alaskakoolvis # ALIAS Alaska koolvis
 Alaska pollak # ALIAS Alaska koolvis
 Alaska pollock # ALIAS Alaska koolvis
 Albacore tonijn
+Albacore # ALIAS Albacore tonijn
 Alfonsino
 Alikruik
 Alver
@@ -537,14 +538,14 @@ Tandbrasem
 Tapijtschelp
 Tarbot
 Tarpoen
-Thon albacore
+Thon albacore # ALIAS Albacore tonijn
 Tijgergarnaal
 Tilapia
 Toekoenari
 Tong
 Tongschar
 Tonijn
-Tonijn albacore
+Tonijn albacore # ALIAS Albacore tonijn
 Tonijn skipjack # ALIAS Skipjack tonijn
 Tonkin ombervis
 Trekkervis
@@ -577,7 +578,7 @@ Witte koolvis
 Witte ombervis
 Witte steur
 Witte stompneus
-Witte tonijn
+Witte tonijn # ALIAS Albacore tonijn
 Witte zeebrasem
 Witvis
 Wolfharing
