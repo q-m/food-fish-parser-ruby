@@ -422,7 +422,10 @@ Red grouper # ALIAS Rode tandbaars
 Red salmon # ALIAS Rode zalm
 Red snapper # ALIAS Rode snapper
 Regenboogforel
-Reuzehaai
+Reuzehaai ALIAS Reuzenhaai
+Reuzegarnaal # ALIAS Reuzengarnaal
+Reuzezeebaars # ALIAS Reuzenzeebaars
+Reuzenhaai
 Reuzengarnaal
 Reuzenzeebaars
 Reuze strandschelp
