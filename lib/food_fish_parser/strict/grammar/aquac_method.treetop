@@ -4,7 +4,7 @@ module FoodFishParser::Strict::Grammar
     include Words
 
     rule aquac_method_indicator
-      ( 'wijze van vangst en kweekmethode: aquacultuur:'i / 'kweekmethoden'i / 'kweekmethode'i )
+      ( 'wijze van vangst en kweekmethode: aquacultuur:'i / 'kweekmethoden'i / 'kweekmethode'i / 'gekweekt met'i )
       !char
       ( ws* ( ':' / '>' ) )?
     end

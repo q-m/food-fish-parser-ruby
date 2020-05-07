@@ -5,7 +5,11 @@ module FoodFishParser::Strict::Grammar
 
     rule catch_method_indicator
       ( ( comma ws* )? ( 'wildfang'i / 'wild'i ) ws* ( comma ws* )? )?
-      ( 'gevangen'i ws+ with / 'vangstmethode'i / 'vangsmethode'i / 'fangmethoden'i / 'fangmethode'i  )
+      (
+        'in'i ws+ 'zoet'i ws+ 'zoet'i ws+ 'water'i ws+ 'gevangen'i /
+        'gevangen'i ws+ with / 'vangstmethode'i / 'vangsmethode'i /
+        'fangmethoden'i / 'fangmethode'i
+       )
       !char
       ( ws* ( ':' / '>' ) )?
     end
